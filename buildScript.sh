@@ -93,7 +93,7 @@ for ((i = 0; i < ${#PROJECTS_NAMES[@]}; i++)); do
 
         echo "Building for platform: $PLATFORM"
         PROJECT_SYMROOT+="/$PLATFORM"
-        POD_OUTPUT_DIR="$PROJECT_NAME/$POD_DIRECTORY_NAME/$POD_VERSION/$PLATFORM"
+        POD_OUTPUT_DIR="$PROJECT_NAME/$POD_DIRECTORY_NAME/$POD_VERSION/$PROJECT_NAME/$PLATFORM"
         POD_OUTPUT_DIR_FRAMEWORK="$POD_OUTPUT_DIR/$SCHEME_NAME.framework"
         createOrCleanDirectory "$POD_OUTPUT_DIR_FRAMEWORK"
 
@@ -126,18 +126,22 @@ for ((i = 0; i < ${#PROJECTS_NAMES[@]}; i++)); do
             exit 1
         fi
         copyToOutputDirectory $POD_OUTPUT_DIR_FRAMEWORK $UNIVERSAL_FRAMEWORK_FOLDER
-
-        README_FILE="$ROOT_FOLDER/$PROJECT_NAME/${README_FILE_NAMES[i]}"
-        copyToOutputDirectory "$POD_OUTPUT_DIR" $README_FILE
-
-        #ZIP POD CONTENTS
-        ZIP_FILE_NAME="$POD_OUTPUT_DIR/../$PLATFORM.zip"
-        echo "Creating zip file: $ZIP_FILE_NAME"
-
-        ditto -c -k --sequesterRsrc --keepParent $POD_OUTPUT_DIR $ZIP_FILE_NAME
-
-        #CLEAN UP
-        echo "Cleaning up Pod folder..."
-        rm -rf $POD_OUTPUT_DIR
     done
+    
+    POD_OUTPUT_DIR="$PROJECT_NAME/$POD_DIRECTORY_NAME/$POD_VERSION/$PROJECT_NAME"
+
+    #COPY README FILE
+    README_FILE="$ROOT_FOLDER/$PROJECT_NAME/${README_FILE_NAMES[i]}"
+    copyToOutputDirectory $POD_OUTPUT_DIR $README_FILE
+
+    #ZIP POD CONTENTS
+    ZIP_FILE_NAME="$POD_OUTPUT_DIR/../$PROJECT_NAME.zip"
+    echo "Creating zip file: $ZIP_FILE_NAME"
+
+    ditto -c -k --sequesterRsrc $POD_OUTPUT_DIR $ZIP_FILE_NAME
+
+    #CLEAN UP
+    echo "Cleaning up Pod folder..."
+    find "$POD_OUTPUT_DIR/.." -type f ! -name "*.zip" -delete #Files
+    find "$POD_OUTPUT_DIR/.." -type d -delete #Folders
 done
