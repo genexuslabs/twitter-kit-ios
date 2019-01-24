@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = "GXTwitterKit"
-  s.version = "3.4.3"
+  s.version = "3.4.4"
   s.summary = "Increase user engagement and app growth."
   s.homepage = "https://github.com/genexuslabs/twitter-kit-ios"
   s.documentation_url = "https://github.com/genexuslabs/twitter-kit-ios/wiki"
