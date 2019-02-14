@@ -54,6 +54,7 @@
 #import "TWTRURLSessionConfig.h"
 #import "TWTRUser.h"
 #import "TWTRWebAuthenticationFlow.h"
+#import "TWTRWebAuthenticationViewController.h"
 
 #define AssetCachePath (@"cache/assets")
 
@@ -364,9 +365,25 @@ static TWTRTwitter *sharedTwitter;
                 web view controller at this point in the login cycle otherwise this would dismiss
                 the view controller below it.
              */
-			[[TWTRUtils topViewController] dismissViewControllerAnimated:YES completion:^{
+			UIViewController *topViewController = [TWTRUtils topViewController];
+			
+			/**
+			 	Check to make sure that we have not grabbed the wrong view controller.
+			 */
+			BOOL shouldDismissViewController = NO;
+			for (UIViewController *childViewController in topViewController.childViewControllers) {
+				if ([childViewController isKindOfClass:TWTRWebAuthenticationViewController.class]) {
+					shouldDismissViewController = YES;
+					break;
+				}
+			}
+			if (shouldDismissViewController) {
+				[topViewController dismissViewControllerAnimated:YES completion:^{
+					completion(session, error);
+				}];
+			} else {
 				completion(session, error);
-			}];
+			}
         }];
 }
 
