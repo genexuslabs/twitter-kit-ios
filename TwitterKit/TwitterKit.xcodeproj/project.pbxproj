@@ -2962,7 +2962,7 @@
 		A97654DD18E0B29B00E25169 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1160;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = Twitter;
 				TargetAttributes = {
 					A966541318EB687000B61CEE = {
@@ -2977,13 +2977,13 @@
 			};
 			buildConfigurationList = A97654E018E0B29B00E25169 /* Build configuration list for PBXProject "TwitterKit" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 				ko,
 				ja,
+				Base,
 			);
 			mainGroup = A97654DC18E0B29B00E25169;
 			productRefGroup = A97654E618E0B29B00E25169 /* Products */;
@@ -3498,6 +3498,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -3532,6 +3533,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
