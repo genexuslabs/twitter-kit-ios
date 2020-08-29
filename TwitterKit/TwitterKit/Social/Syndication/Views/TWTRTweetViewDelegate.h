@@ -16,7 +16,7 @@
  */
 
 #import <UIKit/UIKit.h>
-#import "TWTRVideoPlaybackState.h"
+#import <TwitterKit/TWTRVideoPlaybackState.h>
 
 @class TWTRSession;
 @class TWTRTweet;

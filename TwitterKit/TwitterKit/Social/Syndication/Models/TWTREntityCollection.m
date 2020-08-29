@@ -15,19 +15,19 @@
  *
  */
 
-#import "TWTREntityCollection.h"
+#import <TwitterKit/TWTREntityCollection.h>
 #import <TwitterCore/TWTRAPIConstants.h>
 #import <TwitterCore/TWTRDictUtil.h>
-#import "TWTRAPIConstantsStatus.h"
-#import "TWTRJSONKeyRequirement.h"
-#import "TWTRJSONValidator.h"
-#import "TWTRNSCodingUtil.h"
-#import "TWTRTweetCashtagEntity.h"
-#import "TWTRTweetHashtagEntity.h"
-#import "TWTRTweetMediaEntity.h"
-#import "TWTRTweetUrlEntity.h"
-#import "TWTRTweetUserMentionEntity.h"
-#import "TWTRValueTransformers.h"
+#import <TwitterKit/TWTRAPIConstantsStatus.h>
+#import <TwitterKit/TWTRJSONKeyRequirement.h>
+#import <TwitterKit/TWTRJSONValidator.h>
+#import <TwitterKit/TWTRNSCodingUtil.h>
+#import <TwitterKit/TWTRTweetCashtagEntity.h>
+#import <TwitterKit/TWTRTweetHashtagEntity.h>
+#import <TwitterKit/TWTRTweetMediaEntity.h>
+#import <TwitterKit/TWTRTweetUrlEntity.h>
+#import <TwitterKit/TWTRTweetUserMentionEntity.h>
+#import <TwitterKit/TWTRValueTransformers.h>
 
 @interface TWTREntityCollection ()
 

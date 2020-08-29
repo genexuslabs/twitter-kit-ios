@@ -19,8 +19,8 @@
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
 
-#import "TWTRAPIClient.h"
-#import "TWTRTimelineDataSource.h"
+#import <TwitterKit/TWTRAPIClient.h>
+#import <TwitterKit/TWTRTimelineDataSource.h>
 
 @class TWTRNetworking;
 @class TWTRCardConfiguration;

@@ -192,7 +192,7 @@ NSString *const TWTRGenericKeychainItemErrorDomain = @"TWTRGenericKeychainItemEr
     return [self storeInKeychainReplacingExisting:YES error:error];
 }
 
-- (BOOL)storeInKeychainReplacingExisting:(BOOL)replaceExisting error:(NSError **)error;
+- (BOOL)storeInKeychainReplacingExisting:(BOOL)replaceExisting error:(NSError *__autoreleasing*)error;
 {
     __block BOOL success = YES;
 
@@ -223,7 +223,7 @@ NSString *const TWTRGenericKeychainItemErrorDomain = @"TWTRGenericKeychainItemEr
     return success;
 }
 
-- (BOOL)removeFromKeychain:(NSError **)error
+- (BOOL)removeFromKeychain:(NSError *__autoreleasing*)error
 {
     __block BOOL success = YES;
 
@@ -234,7 +234,7 @@ NSString *const TWTRGenericKeychainItemErrorDomain = @"TWTRGenericKeychainItemEr
     return success;
 }
 
-+ (BOOL)removeAllItemsForQuery:(TWTRGenericKeychainQuery *)query error:(NSError **)error;
++ (BOOL)removeAllItemsForQuery:(TWTRGenericKeychainQuery *)query error:(NSError *__autoreleasing*)error;
 {
     __block BOOL success = YES;
 
@@ -286,7 +286,7 @@ NSString *const TWTRGenericKeychainItemErrorDomain = @"TWTRGenericKeychainItemEr
 }
 
 #pragma mark - Query
-+ (NSArray *)storedItemsMatchingQuery:(TWTRGenericKeychainQuery *)query error:(NSError **)error
++ (NSArray *)storedItemsMatchingQuery:(TWTRGenericKeychainQuery *)query error:(NSError *__autoreleasing*)error
 {
     NSArray *__block items = nil;
 
