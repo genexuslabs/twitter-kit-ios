@@ -15,7 +15,7 @@
  *
  */
 
-#import <MoPub/MPTableViewAdPlacer.h>
+@import MoPub;
 #import <OCMock/OCMock.h>
 #import "TWTRMoPubAdConfiguration.h"
 #import "TWTRTableViewAdPlacer.h"

@@ -15,7 +15,7 @@
  *
  */
 
-#import <MoPub/MoPub.h>
+@import MoPub;
 #import <OCMock/OCMock.h>
 #import "TWTRMoPubVersionChecker.h"
 #import "TWTRTestCase.h"
