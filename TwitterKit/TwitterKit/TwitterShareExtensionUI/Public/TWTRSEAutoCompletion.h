@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRSEAutoCompletion_h
+#define TWTRSEAutoCompletion_h
+
 @import Foundation;
 
 @protocol TWTRSETwitterUser;
@@ -51,3 +54,5 @@ typedef void (^TWTRSEUserAutoCompletionCallback)(NSArray<id<TWTRSETwitterUser>> 
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif /* TWTRSEAutoCompletion_h */

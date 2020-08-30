@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRTweetTableViewCell_h
+#define TWTRTweetTableViewCell_h
+
 #import <UIKit/UIKit.h>
 #import "TWTRTweetView.h"
 
@@ -62,3 +65,5 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif /* TWTRTweetTableViewCell_h */

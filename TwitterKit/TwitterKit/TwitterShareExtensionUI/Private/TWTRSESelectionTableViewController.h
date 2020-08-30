@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRSESelectionTableViewController_h
+#define TWTRSESelectionTableViewController_h
+
 @import UIKit.UITableViewController;
 
 NS_ASSUME_NONNULL_BEGIN
@@ -27,3 +30,5 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif /* TWTRSESelectionTableViewController_h */

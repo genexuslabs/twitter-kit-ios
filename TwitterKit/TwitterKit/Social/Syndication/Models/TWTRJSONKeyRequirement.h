@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRJSONKeyRequirement_h
+#define TWTRJSONKeyRequirement_h
+
 /**
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
@@ -57,3 +60,5 @@
 + (instancetype)requiredURL;
 
 @end
+
+#endif /* TWTRJSONKeyRequirement_h */

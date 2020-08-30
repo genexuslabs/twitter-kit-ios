@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRSETweetShareConfiguration_h
+#define TWTRSETweetShareConfiguration_h
+
 @import Foundation;
 
 @class TWTRSETweet;
@@ -75,3 +78,5 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif /* TWTRSETweetShareConfiguration_h */

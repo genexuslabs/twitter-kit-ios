@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRAPIClient_Private_h
+#define TWTRAPIClient_Private_h
+
 /**
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
@@ -244,3 +247,5 @@ typedef NSArray *_Nonnull (^TWTRTimelineParsedResponseHandler)(id parsedResponse
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif /* TWTRAPIClient_Private_h */

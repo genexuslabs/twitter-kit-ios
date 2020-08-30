@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRCollectionTimelineDataSource_h
+#define TWTRCollectionTimelineDataSource_h
+
 #import <Foundation/Foundation.h>
 #import "TWTRTimelineDataSource.h"
 
@@ -65,3 +68,5 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif /* TWTRCollectionTimelineDataSource_h */

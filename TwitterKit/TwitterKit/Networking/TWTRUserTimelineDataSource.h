@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRUserTimelineDataSource_h
+#define TWTRUserTimelineDataSource_h
+
 #import <Foundation/Foundation.h>
 #import <TwitterKit/TWTRTimelineDataSource.h>
 
@@ -92,3 +95,5 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif /* TWTRUserTimelineDataSource_h */

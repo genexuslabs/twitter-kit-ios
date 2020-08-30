@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRWordRange_h
+#define TWTRWordRange_h
+
 /**
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
@@ -41,3 +44,5 @@
 - (NSRange)wordRangeIncludingUnderscoreForIndex:(NSInteger)index;
 
 @end
+
+#endif /* TWTRWordRange_h */

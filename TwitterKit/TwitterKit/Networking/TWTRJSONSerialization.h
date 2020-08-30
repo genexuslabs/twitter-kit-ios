@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRJSONSerialization_h
+#define TWTRJSONSerialization_h
+
 /**
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
@@ -54,3 +57,5 @@
 + (NSArray *)arrayFromData:(NSData *)responseData error:(NSError **)error __attribute__((nonnull));
 
 @end
+
+#endif /* TWTRJSONSerialization_h */

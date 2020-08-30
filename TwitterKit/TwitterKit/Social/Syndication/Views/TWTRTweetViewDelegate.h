@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRTweetViewDelegate_h
+#define TWTRTweetViewDelegate_h
+
 #import <UIKit/UIKit.h>
 #import <TwitterKit/TWTRVideoPlaybackState.h>
 
@@ -95,3 +98,5 @@ typedef void (^TWTRAuthenticationCompletionHandler)(id<TWTRSessionStore> session
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif /* TWTRTweetViewDelegate_h */

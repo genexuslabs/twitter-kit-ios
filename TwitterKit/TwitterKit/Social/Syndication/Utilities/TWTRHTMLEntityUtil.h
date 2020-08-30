@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRHTMLEntityUtil_h
+#define TWTRHTMLEntityUtil_h
+
 /**
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
@@ -28,3 +31,5 @@
 + (NSString *)unescapedHTMLEntitiesStringWithString:(NSString *)originalString;
 
 @end
+
+#endif /* TWTRHTMLEntityUtil_h */

@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRSessionMigrator_h
+#define TWTRSessionMigrator_h
+
 /**
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
@@ -30,3 +33,5 @@
 - (void)removeDeprecatedSessions;
 
 @end
+
+#endif /* TWTRSessionMigrator_h */

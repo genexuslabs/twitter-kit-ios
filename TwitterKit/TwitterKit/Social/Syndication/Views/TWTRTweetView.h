@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRTweetView_h
+#define TWTRTweetView_h
+
 #import <UIKit/UIKit.h>
 #import <TwitterKit/TWTRTweetViewDelegate.h>
 
@@ -232,3 +235,5 @@ typedef NS_ENUM(NSUInteger, TWTRTweetViewTheme) {
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif /* TWTRTweetView_h */

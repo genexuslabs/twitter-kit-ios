@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRViewUtil_h
+#define TWTRViewUtil_h
+
 /**
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
@@ -137,3 +140,5 @@ CGFloat TWTRRoundHalfInteger(CGFloat);
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif /* TWTRViewUtil_h */

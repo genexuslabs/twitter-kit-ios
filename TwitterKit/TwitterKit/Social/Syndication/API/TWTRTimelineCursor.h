@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRTimelineCursor_h
+#define TWTRTimelineCursor_h
+
 #import <Foundation/Foundation.h>
 
 /**
@@ -74,3 +77,5 @@
 - (instancetype)initWithMaxPosition:(NSString *)maxPosition minPosition:(NSString *)minPosition;
 
 @end
+
+#endif /* TWTRTimelineCursor_h */

@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRSEFonts_h
+#define TWTRSEFonts_h
+
 @import UIKit;
 
 @interface TWTRSEFonts : NSObject
@@ -51,3 +54,5 @@
 @property (nonatomic, nullable, readonly, class) UIColor *navigationButtonColor;
 
 @end
+
+#endif /* TWTRSEFonts_h */

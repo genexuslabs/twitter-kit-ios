@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRURLUtility_h
+#define TWTRURLUtility_h
+
 /**
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
@@ -29,3 +32,5 @@
 + (NSURL *)deepLinkURLForTweet:(TWTRTweet *)tweet;
 
 @end
+
+#endif /* TWTRURLUtility_h */

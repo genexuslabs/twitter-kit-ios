@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRVideoMediaType_h
+#define TWTRVideoMediaType_h
+
 /**
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
@@ -32,3 +35,5 @@
  *           or `TWTRVideoTypeVine`
  */
 NSString *TWTRMediaConstantFromMediaType(TWTRMediaType type);
+
+#endif /* TWTRVideoMediaType_h */

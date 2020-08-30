@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRTimelineParser_h
+#define TWTRTimelineParser_h
+
 /**
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
@@ -74,3 +77,5 @@ NSString *_Nullable decrementTweetPosition(NSString *tweetPosition);
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif /* TWTRTimelineParser_h */

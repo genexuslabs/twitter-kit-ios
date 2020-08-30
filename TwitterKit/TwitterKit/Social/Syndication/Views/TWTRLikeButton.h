@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRLikeButton_h
+#define TWTRLikeButton_h
+
 /**
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
@@ -63,3 +66,5 @@ typedef NS_ENUM(NSInteger, TWTRLikeButtonSize) {
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif /* TWTRLikeButton_h */

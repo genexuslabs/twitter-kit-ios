@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRAPIConstantsStatus_h
+#define TWTRAPIConstantsStatus_h
+
 /**
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
@@ -138,3 +141,5 @@ FOUNDATION_EXTERN NSString *const TWTRAPIConstantsStatusFieldMediaEntityAddition
 FOUNDATION_EXTERN NSString *const TWTRAPIConstantsStatusFieldUserMentionEntityUserID;
 FOUNDATION_EXTERN NSString *const TWTRAPIConstantsStatusFieldUserMentionEntityName;
 FOUNDATION_EXTERN NSString *const TWTRAPIConstantsStatusFieldUserMentionEntityScreenName;
+
+#endif /* TWTRAPIConstantsStatus_h */

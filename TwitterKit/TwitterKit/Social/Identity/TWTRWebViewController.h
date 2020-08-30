@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRWebViewController_h
+#define TWTRWebViewController_h
+
 /**
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
@@ -37,3 +40,5 @@ typedef void (^TWTRWebViewControllerHandleError)(NSError *error);
 - (void)enableCancelButtonWithCancelCompletion:(TWTRWebViewControllerCancelCompletion)cancelCompletion;
 
 @end
+
+#endif /* TWTRWebViewController_h */

@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRSETweetCocoaItemProviderAttachmentView_h
+#define TWTRSETweetCocoaItemProviderAttachmentView_h
+
 @import UIKit;
 
 @class TWTRSETweetAttachmentCocoaItemProvider;
@@ -36,3 +39,5 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif /* TWTRSETweetCocoaItemProviderAttachmentView_h */

@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRWebAuthenticationFlow_h
+#define TWTRWebAuthenticationFlow_h
+
 /**
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
@@ -91,3 +94,5 @@ typedef void (^TWTRAuthRedirectCompletion)(NSURL *url);
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif /* TWTRWebAuthenticationFlow_h */

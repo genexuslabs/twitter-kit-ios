@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRVersionedCacheable_h
+#define TWTRVersionedCacheable_h
+
 /**
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
@@ -34,3 +37,5 @@
 + (NSString *)versionedCacheKeyWithID:(NSString *)IDString perspective:(NSString *)perspective __attribute__((nonnull(1)));
 
 @end
+
+#endif /* TWTRVersionedCacheable_h */

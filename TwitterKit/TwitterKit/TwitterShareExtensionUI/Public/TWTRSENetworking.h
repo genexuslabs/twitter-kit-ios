@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRSENetworking_h
+#define TWTRSENetworking_h
+
 @import Foundation;
 
 @class TWTRSETweet;
@@ -38,3 +41,5 @@ typedef void (^TWTRSENetworkingHydratedTwitterUserLoadCompletion)(id<TWTRSETwitt
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif /* TWTRSENetworking_h */

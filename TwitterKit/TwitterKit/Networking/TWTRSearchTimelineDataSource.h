@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRSearchTimelineDataSource_h
+#define TWTRSearchTimelineDataSource_h
+
 #import <Foundation/Foundation.h>
 #import <TwitterKit/TWTRTimelineDataSource.h>
 
@@ -119,3 +122,5 @@ Data source representing a Search Timeline. Provides TWTRTweet objects to a TWTR
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif /* TWTRSearchTimelineDataSource_h */

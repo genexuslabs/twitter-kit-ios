@@ -15,4 +15,9 @@
  *
  */
 
+#ifndef TWTRSEFrameworkLazyLoading_h
+#define TWTRSEFrameworkLazyLoading_h
+
 FOUNDATION_EXTERN void twtr_ensureFrameworksLoadedAtRuntime(void);
+
+#endif /* TWTRSEFrameworkLazyLoading_h */

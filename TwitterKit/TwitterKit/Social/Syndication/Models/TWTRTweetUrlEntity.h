@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRTweetUrlEntity_h
+#define TWTRTweetUrlEntity_h
+
 #import <TwitterKit/TWTRJSONConvertible.h>
 #import "TWTRTweetEntity.h"
 
@@ -44,3 +47,5 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif /* TWTRTweetUrlEntity_h */

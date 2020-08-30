@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRMediaContainerViewController_h
+#define TWTRMediaContainerViewController_h
+
 /**
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
@@ -83,3 +86,5 @@
 - (void)viewDidLoadWithMediaContainer:(TWTRMediaContainerViewController *)mediaContainer;
 
 @end
+
+#endif /* TWTRMediaContainerViewController_h */

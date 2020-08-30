@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRTranslationsUtil_h
+#define TWTRTranslationsUtil_h
+
 /**
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
@@ -29,3 +32,5 @@ extern NSString *TWTRLocalizedString(NSString *key);
 + (NSString *)accessibilityStringByConcatenatingItems:(NSArray *)stringArray;
 
 @end
+
+#endif /* TWTRTranslationsUtil_h */

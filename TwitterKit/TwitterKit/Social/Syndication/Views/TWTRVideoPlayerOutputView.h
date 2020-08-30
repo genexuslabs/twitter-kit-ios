@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRVideoPlayerOutputView_h
+#define TWTRVideoPlayerOutputView_h
+
 /**
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
@@ -145,3 +148,5 @@ typedef NS_ENUM(NSUInteger, TWTRVideoPlayerAspectRatio) {
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif /* TWTRVideoPlayerOutputView_h */

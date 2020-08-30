@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRComposerNetworking_h
+#define TWTRComposerNetworking_h
+
 /**
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
@@ -57,3 +60,5 @@
 - (void)cancelPendingVideoUpload;
 
 @end
+
+#endif /* TWTRComposerNetworking_h */

@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRImageSequenceConfiguration_h
+#define TWTRImageSequenceConfiguration_h
+
 /**
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
@@ -36,3 +39,5 @@ typedef NS_ENUM(NSInteger, TWTRHeartImageSequenceSize) { TWTRHeartImageSequenceS
 + (TWTRImageSequenceConfiguration *)heartImageSequenceConfigurationWithSize:(TWTRHeartImageSequenceSize)size;
 
 @end
+
+#endif /* TWTRImageSequenceConfiguration_h */

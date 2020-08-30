@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRSETweetCustomCardAttachmentView_h
+#define TWTRSETweetCustomCardAttachmentView_h
+
 @import UIKit;
 
 @protocol TWTRSETweetAttachmentCustomCardViewProvider;
@@ -36,3 +39,5 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif /* TWTRSETweetCustomCardAttachmentView_h */

@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRSEThrottledProperty_h
+#define TWTRSEThrottledProperty_h
+
 @import Foundation;
 
 NS_ASSUME_NONNULL_BEGIN
@@ -48,3 +51,5 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif /* TWTRSEThrottledProperty_h */

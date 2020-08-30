@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRProfileView_h
+#define TWTRProfileView_h
+
 /**
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
@@ -24,3 +27,5 @@
 @interface TWTRProfileView : UIImageView
 
 @end
+
+#endif /* TWTRProfileView_h */

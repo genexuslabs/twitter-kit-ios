@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRImageLoader_h
+#define TWTRImageLoader_h
+
 /**
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
@@ -82,3 +85,5 @@ typedef void (^TWTRImageLoaderFetchCompletion)(UIImage *_Nullable image, NSError
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif /* TWTRImageLoader_h */

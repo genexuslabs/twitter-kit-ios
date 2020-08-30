@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRSEColors_h
+#define TWTRSEColors_h
+
 @import UIKit.UIColor;
 
 NS_INLINE const CGFloat TWTRSEUIHexColorElement(NSUInteger hexColorElement)
@@ -26,3 +29,5 @@ NS_INLINE UIColor *TWTRSEUITwitterColorImagePlaceholder()
 {
     return [UIColor colorWithRed:TWTRSEUIHexColorElement(0xCC) green:TWTRSEUIHexColorElement(0xD6) blue:TWTRSEUIHexColorElement(0xDD) alpha:1];
 }
+
+#endif /* TWTRSEColors_h */

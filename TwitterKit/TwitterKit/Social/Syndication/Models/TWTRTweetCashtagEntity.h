@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRTweetCashtagEntity_h
+#define TWTRTweetCashtagEntity_h
+
 #import <TwitterKit/TWTRJSONConvertible.h>
 #import "TWTRTweetEntity.h"
 
@@ -34,3 +37,5 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif /* TWTRTweetCashtagEntity_h */

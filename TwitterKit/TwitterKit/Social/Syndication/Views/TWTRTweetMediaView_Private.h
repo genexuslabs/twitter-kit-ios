@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRTweetMediaView_Private_h
+#define TWTRTweetMediaView_Private_h
+
 /**
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
@@ -28,3 +31,5 @@
 - (BOOL)presentDetailedVideoView;
 
 @end
+
+#endif /* TWTRTweetMediaView_Private_h */

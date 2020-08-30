@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRSETweet_h
+#define TWTRSETweet_h
+
 @import Foundation;
 
 @protocol TWTRSETweetAttachment;
@@ -70,3 +73,5 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif /* TWTRSETweet_h */

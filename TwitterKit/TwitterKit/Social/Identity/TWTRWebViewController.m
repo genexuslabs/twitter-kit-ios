@@ -96,10 +96,12 @@
 		NSLog(@"Opening link in Safari browser, as the host is not whitelisted: %@", request.URL);
 		[[UIApplication sharedApplication] openURL:request.URL];
 		decisionHandler(WKNavigationActionPolicyCancel);
+		return;
 	}
 	if ([self shouldStartLoadWithRequest]) {
 		BOOL shouldAllowNavigation = self.shouldStartLoadWithRequest(self, request, navigationAction.navigationType);
 		decisionHandler(shouldAllowNavigation ? WKNavigationActionPolicyAllow : WKNavigationActionPolicyCancel);
+		return;
 	}
 	decisionHandler(WKNavigationActionPolicyAllow);
 }

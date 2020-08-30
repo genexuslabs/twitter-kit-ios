@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRComposer_h
+#define TWTRComposer_h
+
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
@@ -81,3 +84,5 @@ typedef void (^TWTRComposerCompletion)(TWTRComposerResult result);
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif /* TWTRComposer_h */

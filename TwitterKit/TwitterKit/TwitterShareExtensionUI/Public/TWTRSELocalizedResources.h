@@ -15,8 +15,13 @@
  *
  */
 
+#ifndef TWTRSELocalizedResources_h
+#define TWTRSELocalizedResources_h
+
 @import Foundation.NSString;
 
 @protocol TWTRSELocalizedResources
 + (NSString *)localizedString:(NSString *)string;
 @end
+
+#endif /* TWTRSELocalizedResources_h */

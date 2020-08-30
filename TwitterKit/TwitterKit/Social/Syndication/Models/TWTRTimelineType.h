@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRTimelineType_h
+#define TWTRTimelineType_h
+
 /*
  *  Type of timelines that may be loaded and shown to the user.
  */
@@ -40,3 +43,5 @@ typedef NS_ENUM(NSUInteger, TWTRTimelineType) {
      */
     TWTRTimelineTypeList,
 };
+
+#endif /* TWTRTimelineType_h */

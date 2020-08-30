@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRSETweetComposerTableViewDataSource_h
+#define TWTRSETweetComposerTableViewDataSource_h
+
 #import "TWTRSETweetTextViewContainer.h"
 
 @class TWTRSETweetShareConfiguration;
@@ -63,3 +66,5 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif /* TWTRSETweetComposerTableViewDataSource_h */

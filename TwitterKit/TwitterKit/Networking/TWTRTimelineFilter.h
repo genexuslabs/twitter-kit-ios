@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRTimelineFilter_h
+#define TWTRTimelineFilter_h
+
 #import <Foundation/Foundation.h>
 
 /**
@@ -39,3 +42,5 @@
  */
 - (NSUInteger)filterCount;
 @end
+
+#endif /* TWTRTimelineFilter_h */

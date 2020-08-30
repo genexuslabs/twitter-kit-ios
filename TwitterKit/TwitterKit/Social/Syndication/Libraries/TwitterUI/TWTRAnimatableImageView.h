@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRAnimatableImageView_h
+#define TWTRAnimatableImageView_h
+
 /**
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
@@ -38,3 +41,5 @@
 - (void)startAnimatingWithFrameSheet:(TWTRFrameSheet *)frameSheet duration:(NSTimeInterval)duration repeatCount:(NSUInteger)repeatCount completion:(void (^)(BOOL finished))completion;
 
 @end
+
+#endif /* TWTRAnimatableImageView_h */

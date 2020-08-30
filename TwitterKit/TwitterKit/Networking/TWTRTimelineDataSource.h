@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRTimelineDataSource_h
+#define TWTRTimelineDataSource_h
+
 #import "TWTRTimelineType.h"
 
 @class TWTRAPIClient;
@@ -64,3 +67,5 @@ typedef void (^TWTRLoadTimelineCompletion)(NSArray<TWTRTweet *> *_Nullable tweet
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif /* TWTRTimelineDataSource_h */

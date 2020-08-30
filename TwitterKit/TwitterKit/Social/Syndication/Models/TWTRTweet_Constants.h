@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRTweet_Constants_h
+#define TWTRTweet_Constants_h
+
 /**
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
@@ -41,3 +44,5 @@ FOUNDATION_EXTERN NSString *const TWTRTweetCodingFieldRetweeted;
 FOUNDATION_EXTERN NSString *const TWTRTweetCodingFieldRetweetedTweet;
 FOUNDATION_EXTERN NSString *const TWTRTweetCodingFieldText;
 FOUNDATION_EXTERN NSString *const TWTRTweetCodingFieldUser;
+
+#endif /* TWTRTweet_Constants_h */

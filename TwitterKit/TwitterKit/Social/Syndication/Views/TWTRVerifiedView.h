@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRVerifiedView_h
+#define TWTRVerifiedView_h
+
 /**
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
@@ -24,3 +27,5 @@
 @interface TWTRVerifiedView : UIImageView
 
 @end
+
+#endif /* TWTRVerifiedView_h */

@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRTweetShareItemProvider_h
+#define TWTRTweetShareItemProvider_h
+
 /**
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
@@ -30,3 +33,5 @@
 - (instancetype)initWithTweet:(TWTRTweet *)tweet;
 
 @end
+
+#endif /* TWTRTweetShareItemProvider_h */

@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRKit_h
+#define TWTRKit_h
+
 #import <AVFoundation/AVFoundation.h>
 #import <Accounts/Accounts.h>
 #import <CoreMedia/CoreMedia.h>
@@ -59,3 +62,5 @@
 #import "TWTRUserTimelineDataSource.h"
 #import "TWTRVideoMetaData.h"
 #import "TWTRVideoPlaybackState.h"
+
+#endif /* TWTRKit_h */

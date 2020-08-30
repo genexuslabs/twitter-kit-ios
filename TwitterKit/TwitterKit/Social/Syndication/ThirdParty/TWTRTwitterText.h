@@ -1,3 +1,6 @@
+#ifndef TWTRTwitterText_h
+#define TWTRTwitterText_h
+
 //
 //  TwitterText.h
 //
@@ -36,3 +39,5 @@
 + (NSInteger)remainingCharacterCount:(NSString *)text httpURLLength:(NSUInteger)httpURLLength httpsURLLength:(NSUInteger)httpsURLLength;
 
 @end
+
+#endif /* TWTRTwitterText_h */

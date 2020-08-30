@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRVideoPlaybackConfiguration_h
+#define TWTRVideoPlaybackConfiguration_h
+
 /**
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
@@ -76,3 +79,5 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif /* TWTRVideoPlaybackConfiguration_h */

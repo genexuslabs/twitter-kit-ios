@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRSEBaseTableViewCell_h
+#define TWTRSEBaseTableViewCell_h
+
 @import UIKit;
 
 @interface TWTRSEBaseTableViewCell : UITableViewCell
@@ -25,3 +28,5 @@
 - (instancetype)init NS_DESIGNATED_INITIALIZER;
 
 @end
+
+#endif /* TWTRSEBaseTableViewCell_h */

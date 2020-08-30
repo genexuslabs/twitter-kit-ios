@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRVideoMetaData_h
+#define TWTRVideoMetaData_h
+
 #import <TwitterKit/TWTRJSONConvertible.h>
 #import <UIKit/UIKit.h>
 
@@ -69,3 +72,5 @@ FOUNDATION_EXTERN NSString *const TWTRMediaTypeM3u8;
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif /* TWTRVideoMetaData_h */

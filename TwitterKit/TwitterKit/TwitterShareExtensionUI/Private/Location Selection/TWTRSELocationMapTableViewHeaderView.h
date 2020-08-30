@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRSELocationMapTableViewHeaderView_h
+#define TWTRSELocationMapTableViewHeaderView_h
+
 @import CoreLocation;
 @import UIKit;
 
@@ -30,3 +33,5 @@
 - (instancetype)initWithCenterCoordinates:(CLLocationCoordinate2D)coordinates NS_DESIGNATED_INITIALIZER;
 
 @end
+
+#endif /* TWTRSELocationMapTableViewHeaderView_h */

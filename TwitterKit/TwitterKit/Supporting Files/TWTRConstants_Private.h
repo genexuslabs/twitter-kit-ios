@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRConstants_Private_h
+#define TWTRConstants_Private_h
+
 /**
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
@@ -47,3 +50,5 @@ FOUNDATION_EXTERN NSString *const TWTRKitInfoConsumerSecretKey;
 #pragma mark - URL Referrer
 
 FOUNDATION_EXTERN NSString *const TWTRURLReferrer;
+
+#endif /* TWTRConstants_Private_h */

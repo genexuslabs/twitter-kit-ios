@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRSEAutoCompletionTableViewController_h
+#define TWTRSEAutoCompletionTableViewController_h
+
 @import UIKit;
 
 NS_ASSUME_NONNULL_BEGIN
@@ -49,3 +52,5 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif /* TWTRSEAutoCompletionTableViewController_h */

@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRErrors_h
+#define TWTRErrors_h
+
 /**
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
@@ -38,3 +41,5 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif /* TWTRErrors_h */

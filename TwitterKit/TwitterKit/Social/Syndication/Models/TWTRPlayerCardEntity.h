@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRPlayerCardEntity_h
+#define TWTRPlayerCardEntity_h
+
 /**
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
@@ -84,3 +87,5 @@ typedef NS_ENUM(NSInteger, TWTRPlayerCardType) {
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif /* TWTRPlayerCardEntity_h */

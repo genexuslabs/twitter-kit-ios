@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRCardEntity_Subclasses_h
+#define TWTRCardEntity_Subclasses_h
+
 /**
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
@@ -45,3 +48,5 @@ extern NSString *const TWTRCardEntityBindingValueImageTransformerName;
 @property (nonatomic, readonly) CGSize imageSize;
 
 @end
+
+#endif /* TWTRCardEntity_Subclasses_h */

@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRImageScrollView_h
+#define TWTRImageScrollView_h
+
 /**
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
@@ -30,3 +33,5 @@
 - (CGFloat)initialZoomScaleForImage:(UIImage *)image constrainedToBounds:(CGRect)bounds;
 
 @end
+
+#endif /* TWTRImageScrollView_h */

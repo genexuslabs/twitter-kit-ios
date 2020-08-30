@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRTweetContentView_Layout_h
+#define TWTRTweetContentView_Layout_h
+
 /**
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
@@ -28,3 +31,5 @@
 @property (nonatomic, readonly) TWTRTweetLabel *tweetLabel;
 
 @end
+
+#endif /* TWTRTweetContentView_Layout_h */

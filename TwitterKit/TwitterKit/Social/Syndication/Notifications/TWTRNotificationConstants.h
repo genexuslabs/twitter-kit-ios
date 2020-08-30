@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRNotificationConstants_h
+#define TWTRNotificationConstants_h
+
 #import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
@@ -146,3 +149,5 @@ FOUNDATION_EXTERN NSString *const TWTRUserDidLogInNotification;
 FOUNDATION_EXTERN NSString *const TWTRLoggedInUserIDKey;
 
 NS_ASSUME_NONNULL_END
+
+#endif /* TWTRNotificationConstants_h */

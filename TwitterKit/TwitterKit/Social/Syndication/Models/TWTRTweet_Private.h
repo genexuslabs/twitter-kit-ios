@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRTweet_Private_h
+#define TWTRTweet_Private_h
+
 /**
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
@@ -82,3 +85,5 @@ FOUNDATION_EXTERN NSString *const TWTRTweetPerspectivalUserID;
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif /* TWTRTweet_Private_h */

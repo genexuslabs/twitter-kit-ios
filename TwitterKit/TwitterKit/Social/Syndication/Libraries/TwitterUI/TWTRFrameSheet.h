@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRFrameSheet_h
+#define TWTRFrameSheet_h
+
 /**
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
@@ -33,3 +36,5 @@
 - (NSArray<UIImage *> *)frameArray;
 
 @end
+
+#endif /* TWTRFrameSheet_h */
