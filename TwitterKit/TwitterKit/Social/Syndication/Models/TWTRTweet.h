@@ -92,7 +92,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  *  The permalink URL for this Tweet.
  *
- *  Suitable for loading in a `UIWebView`, `WKWebView` or passing to Safari:
+ *  Suitable for loading in a `WKWebView`, `WKWebView` or passing to Safari:
  *
  *  `[[UIApplication sharedApplication] openURL:tweet.permalink];`
  */

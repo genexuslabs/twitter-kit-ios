@@ -36,7 +36,7 @@ typedef NS_ENUM(NSInteger, TWTRLikeButtonSize) {
 @interface TWTRLikeButton : UIButton
 
 /**
- *  The view controller from which to present the login UIWebView or
+ *  The view controller from which to present the login WKWebView or
  *  account picker sheet.
  */
 @property (nonatomic, weak, null_resettable) UIViewController *presenterViewController;

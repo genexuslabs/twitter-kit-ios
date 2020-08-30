@@ -46,7 +46,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly) TWTRTweetViewStyle style;
 
 /**
- *  The view controller from which to present the login UIWebView or
+ *  The view controller from which to present the login WKWebView or
  *  account picker sheet.
  */
 @property (nonatomic, weak, null_resettable) UIViewController *presenterViewController;
