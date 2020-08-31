@@ -37,6 +37,7 @@
 		2B500A8024FBF18500EEE584 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B500A7D24FBF18500EEE584 /* WebKit.framework */; };
 		2B500A8124FC1F6000EEE584 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4EB31824F9F499003D6CEE /* CoreServices.framework */; };
 		2B500A8324FC20AE00EEE584 /* TWTRTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B500A8224FC20AE00EEE584 /* TWTRTestCase.h */; };
+		2B500A8524FC59FA00EEE584 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B500A7D24FBF18500EEE584 /* WebKit.framework */; };
 		321EF9AB1950D1DC002FEC63 /* TWTRNSCodingUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 321EF9A91950D1DC002FEC63 /* TWTRNSCodingUtil.h */; };
 		321EF9AC1950D1DC002FEC63 /* TWTRNSCodingUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 321EF9AA1950D1DC002FEC63 /* TWTRNSCodingUtil.m */; };
 		3255B3B81937E2D3005EE3CE /* TWTRTweetEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = 3255B3B61937E2D3005EE3CE /* TWTRTweetEntity.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -1348,6 +1349,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B500A8524FC59FA00EEE584 /* WebKit.framework in Frameworks */,
 				2B500A8124FC1F6000EEE584 /* CoreServices.framework in Frameworks */,
 				AA3E099C20125EC600792255 /* MapKit.framework in Frameworks */,
 				AA3E099920125E9100792255 /* CoreLocation.framework in Frameworks */,

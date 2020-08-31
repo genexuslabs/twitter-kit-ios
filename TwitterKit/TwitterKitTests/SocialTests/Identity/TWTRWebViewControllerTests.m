@@ -31,13 +31,12 @@
 
 - (id)initWithRequest:(NSURLRequest *)request
 {
-	return [self initWithRequest:request navigationType:WKNavigationTypeLinkActivated];
+	return [self initWithRequest:request navigationType:0];
 }
 
 - (id)initWithRequest:(NSURLRequest *)request navigationType:(WKNavigationType)navigationType
 {
 	self = [super init];
-	
 	if (self)
 	{
 		_request = request;
@@ -47,12 +46,12 @@
 	return self;
 }
 
-- (NSURLRequest *)getRequest
+- (NSURLRequest *)request
 {
 	return _request;
 }
 
-- (WKNavigationType)getNavigationType
+- (WKNavigationType)navigationType
 {
 	return _navigationType;
 }
@@ -89,7 +88,7 @@
 {
     NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:@"http://twitter.com/test"]];
 	WKNavigationAction *navigationAction = [[DummyNavigationAction alloc] initWithRequest:request];
-	[self.webVC webView:nil decidePolicyForNavigationAction:navigationAction decisionHandler:^void (WKNavigationActionPolicy policy) {
+	[self.webVC webView:nil decidePolicyForNavigationAction:navigationAction decisionHandler:^(WKNavigationActionPolicy policy) {
 		XCTAssert(policy == WKNavigationActionPolicyAllow);
 	}];
 }
@@ -98,7 +97,7 @@
 {
     NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:@"http://lol.twitter.com/test"]];
 	WKNavigationAction *navigationAction = [[DummyNavigationAction alloc] initWithRequest:request];
-	[self.webVC webView:nil decidePolicyForNavigationAction:navigationAction decisionHandler:^void (WKNavigationActionPolicy policy) {
+	[self.webVC webView:nil decidePolicyForNavigationAction:navigationAction decisionHandler:^(WKNavigationActionPolicy policy) {
 		XCTAssert(policy == WKNavigationActionPolicyAllow);
 	}];
 }
@@ -107,7 +106,7 @@
 {
     NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:@"twittersdk://callback"]];
 	WKNavigationAction *navigationAction = [[DummyNavigationAction alloc] initWithRequest:request];
-	[self.webVC webView:nil decidePolicyForNavigationAction:navigationAction decisionHandler:^void (WKNavigationActionPolicy policy) {
+	[self.webVC webView:nil decidePolicyForNavigationAction:navigationAction decisionHandler:^(WKNavigationActionPolicy policy) {
 		XCTAssert(policy == WKNavigationActionPolicyAllow);
 	}];
 }
@@ -116,7 +115,7 @@
 {
     NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:@"http://lolp0wnedtwitter.com/twittersdk://callback"]];
 	WKNavigationAction *navigationAction = [[DummyNavigationAction alloc] initWithRequest:request];
-	[self.webVC webView:nil decidePolicyForNavigationAction:navigationAction decisionHandler:^void (WKNavigationActionPolicy policy) {
+	[self.webVC webView:nil decidePolicyForNavigationAction:navigationAction decisionHandler:^(WKNavigationActionPolicy policy) {
 		XCTAssertFalse(policy == WKNavigationActionPolicyAllow);
 	}];
 }
@@ -125,7 +124,7 @@
 {
     NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:@"abctwittersdk://callback"]];
 	WKNavigationAction *navigationAction = [[DummyNavigationAction alloc] initWithRequest:request];
-	[self.webVC webView:nil decidePolicyForNavigationAction:navigationAction decisionHandler:^void (WKNavigationActionPolicy policy) {
+	[self.webVC webView:nil decidePolicyForNavigationAction:navigationAction decisionHandler:^(WKNavigationActionPolicy policy) {
 		XCTAssertFalse(policy == WKNavigationActionPolicyAllow);
 	}];
 }
@@ -134,7 +133,7 @@
 {
     NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:@"http://lolp0wnedtwitter.com/test"]];
 	WKNavigationAction *navigationAction = [[DummyNavigationAction alloc] initWithRequest:request];
-	[self.webVC webView:nil decidePolicyForNavigationAction:navigationAction decisionHandler:^void (WKNavigationActionPolicy policy) {
+	[self.webVC webView:nil decidePolicyForNavigationAction:navigationAction decisionHandler:^(WKNavigationActionPolicy policy) {
 		XCTAssertFalse(policy == WKNavigationActionPolicyAllow);
 	}];
 }
@@ -143,7 +142,7 @@
 {
     NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:@"http://twitter.com/test?query=twitter.com"]];
 	WKNavigationAction *navigationAction = [[DummyNavigationAction alloc] initWithRequest:request];
-	[self.webVC webView:nil decidePolicyForNavigationAction:navigationAction decisionHandler:^void (WKNavigationActionPolicy policy) {
+	[self.webVC webView:nil decidePolicyForNavigationAction:navigationAction decisionHandler:^(WKNavigationActionPolicy policy) {
 		XCTAssertTrue(policy == WKNavigationActionPolicyAllow);
 	}];
 }
@@ -152,7 +151,7 @@
 {
     NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:@"http://google.com/test"]];
 	WKNavigationAction *navigationAction = [[DummyNavigationAction alloc] initWithRequest:request];
-	[self.webVC webView:nil decidePolicyForNavigationAction:navigationAction decisionHandler:^void (WKNavigationActionPolicy policy) {
+	[self.webVC webView:nil decidePolicyForNavigationAction:navigationAction decisionHandler:^(WKNavigationActionPolicy policy) {
 		XCTAssertFalse(policy == WKNavigationActionPolicyAllow);
 	}];
 }
