@@ -200,7 +200,7 @@ NSString *const TWTRGenericKeychainItemErrorDomain = @"TWTRGenericKeychainItemEr
 
         if (replaceExisting) {
             NSError *deleteError = nil;
-            if (![self unsynchronizedRemoveFromKeychain:error]) {
+            if (![self unsynchronizedRemoveFromKeychain:&deleteError]) {
                 NSLog(@"Could not delete existing item: %@", deleteError);  // TODO: Update this.
             }
         }

@@ -25,3 +25,5 @@ LIBRARY_SEARCH_PATHS = $(inherited) $(PROJECT_DIR)/../vendor/
 
 
 OTHER_LDFLAGS = $(inherited) -framework OCMock
+
+GCC_WARN_UNUSED_VARIABLE = NO

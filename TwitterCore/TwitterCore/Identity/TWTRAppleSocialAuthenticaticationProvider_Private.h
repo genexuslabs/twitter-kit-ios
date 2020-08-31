@@ -28,7 +28,7 @@
 @interface TWTRAppleSocialAuthenticaticationProvider (Private)
 
 #if IS_UIKIT_AVAILABLE
-- (UIActionSheet *)actionSheet;
+- (UIAlertController *)alertController;
 #endif
 
 @end
