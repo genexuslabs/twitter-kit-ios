@@ -19,7 +19,7 @@
 #define TWTRTweetHashtagEntity_h
 
 #import <TwitterKit/TWTRJSONConvertible.h>
-#import "TWTRTweetEntity.h"
+#import <TwitterKit/TWTRTweetEntity.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

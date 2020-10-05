@@ -14,10 +14,10 @@
 #import <TwitterCore/TWTRGuestAuthProvider.h>
 #import <TwitterCore/TWTRGuestSession.h>
 #import "OCMock.h"
-#import "TWTRAppleSocialAuthenticaticationProvider.h"
-#import "TWTRNetworkSessionProvider.h"
-#import "TWTRSession.h"
-#import "TWTRTestCase.h"
+#import <TwitterCore/TWTRAppleSocialAuthenticaticationProvider.h>
+#import <TwitterCore/TWTRNetworkSessionProvider.h>
+#import <TwitterCore/TWTRSession.h>
+#import <TwitterCore/TWTRTestCase.h>
 
 @interface TWTRNetworkSessionProviderTests : TWTRTestCase
 

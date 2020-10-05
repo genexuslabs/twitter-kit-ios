@@ -19,7 +19,7 @@
  This header is private to the Twitter Core SDK and not exposed for public SDK consumption
  */
 
-#import "TWTRAppleSocialAuthenticaticationProvider.h"
+#import <TwitterCore/TWTRAppleSocialAuthenticaticationProvider.h>
 
 #if IS_UIKIT_AVAILABLE
 @class UIActionSheet;

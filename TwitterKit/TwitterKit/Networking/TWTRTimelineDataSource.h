@@ -18,7 +18,7 @@
 #ifndef TWTRTimelineDataSource_h
 #define TWTRTimelineDataSource_h
 
-#import "TWTRTimelineType.h"
+#import <TwitterKit/TWTRTimelineType.h>
 
 @class TWTRAPIClient;
 @class TWTRTimelineCursor;

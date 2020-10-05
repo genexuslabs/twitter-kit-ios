@@ -746,7 +746,7 @@
 		185CE0D41A0142C5006C5EA4 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1889E17B1A00273D00827E5A /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		18D1E1AB194B477A00BAFD5F /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
-		18FE0753191AAC3500485617 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		18FE0753191AAC3500485617 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = ../../../../../Applications/Xcode12.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = "<group>"; };
 		2002E6021E5F5BDA007AF951 /* TWTRTweetDelegationHelperTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTRTweetDelegationHelperTest.m; sourceTree = "<group>"; };
 		20563D0C1ED4F6FF0094DAB3 /* TWTRStubMobileSSO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWTRStubMobileSSO.h; path = TwitterKitTests/NetworkingTests/TWTRStubMobileSSO.h; sourceTree = SOURCE_ROOT; };
 		20563D0D1ED4F6FF0094DAB3 /* TWTRStubMobileSSO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWTRStubMobileSSO.m; path = TwitterKitTests/NetworkingTests/TWTRStubMobileSSO.m; sourceTree = SOURCE_ROOT; };
@@ -875,7 +875,7 @@
 		3777840A1E96B8D200BC4830 /* TWTRStubTwitterClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWTRStubTwitterClient.h; path = ../shared/TwitterTestFoundation/URLMocking/TWTRStubTwitterClient.h; sourceTree = SOURCE_ROOT; };
 		3777840B1E96B8D200BC4830 /* TWTRStubTwitterClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWTRStubTwitterClient.m; path = ../shared/TwitterTestFoundation/URLMocking/TWTRStubTwitterClient.m; sourceTree = SOURCE_ROOT; };
 		377941441E96DA8D0049A022 /* OCMock.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCMock.framework; path = ../vendor/OCMock.framework; sourceTree = "<group>"; };
-		3779414F1E96DB610049A022 /* OCMock.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCMock.framework; path = ../../vendor/OCMock.framework; sourceTree = "<group>"; };
+		3779414F1E96DB610049A022 /* OCMock.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OCMock.framework; sourceTree = "<group>"; };
 		377AF9301E7A00EB004099F9 /* TWTRComposerAccountTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWTRComposerAccountTests.m; path = SocialTests/TWTRComposerAccountTests.m; sourceTree = "<group>"; };
 		377AF9321E7A0359004099F9 /* TWTRSharedComposerWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTRSharedComposerWrapper.h; sourceTree = "<group>"; };
 		377AF9331E7A0359004099F9 /* TWTRSharedComposerWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTRSharedComposerWrapper.m; sourceTree = "<group>"; };
@@ -1119,7 +1119,7 @@
 		A966541418EB687000B61CEE /* TwitterKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwitterKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A97654E518E0B29B00E25169 /* libTwitterKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTwitterKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A97654E818E0B29B00E25169 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		A97654F618E0B29B00E25169 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		A97654F618E0B29B00E25169 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = ../../../../../Applications/Xcode12.app/Contents/Developer/Library/Frameworks/XCTest.framework; sourceTree = "<group>"; };
 		A976552E18E0B45400E25169 /* TWTRWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTRWebViewController.h; sourceTree = "<group>"; };
 		A976552F18E0B45400E25169 /* TWTRWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTRWebViewController.m; sourceTree = "<group>"; };
 		A9A7FF0C18E4AAA8008334E6 /* TWTRTwitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = TWTRTwitter.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
@@ -1485,7 +1485,7 @@
 				377784031E96B8D200BC4830 /* URLMocking */,
 			);
 			name = TwitterTestFoundation;
-			path = ../../shared/TwitterTestFoundation;
+			path = ../shared/TwitterTestFoundation;
 			sourceTree = "<group>";
 		};
 		377783EF1E96B8D200BC4830 /* Base */ = {
@@ -1541,7 +1541,7 @@
 				379A6D501E95B95200625984 /* metamacros.h */,
 			);
 			name = libextobjc;
-			path = ../../vendor/libextobjc;
+			path = ../TwitterKit/libextobjc;
 			sourceTree = "<group>";
 		};
 		37B6899A198B1C8200E772CA /* Controllers */ = {
@@ -2424,7 +2424,8 @@
 				377783EE1E96B8D200BC4830 /* TwitterTestFoundation */,
 				379A6D4D1E95B95200625984 /* libextobjc */,
 			);
-			path = Vendor;
+			name = Vendor;
+			path = ../vendor;
 			sourceTree = "<group>";
 		};
 		DB2241711C3DA5F6008A6DC7 /* Supporting Files */ = {

@@ -14,18 +14,18 @@
 #import <TwitterCore/TWTRGenericKeychainItem.h>
 #import <TwitterCore/TWTRGuestSession.h>
 #import <TwitterCore/TWTRSession.h>
-#import "TWTRFakeAPIServiceConfig.h"
-#import "TWTRMockURLSessionProtocol.h"
+#import <TwitterCore/TWTRFakeAPIServiceConfig.h>
+#import <TwitterCore/TWTRMockURLSessionProtocol.h>
 #import "OCMock.h"
-#import "TWTRFakeAPIServiceConfig.h"
-#import "TWTRNetworkSessionProvider.h"
-#import "TWTRNilGuestSessionRefreshStrategy.h"
-#import "TWTRSession.h"
-#import "TWTRSessionFixtureLoader.h"
-#import "TWTRSessionRefreshStrategy.h"
-#import "TWTRSessionStore.h"
-#import "TWTRTestCase.h"
-#import "TWTRTestGuestSessionRefreshStrategy.h"
+#import <TwitterCore/TWTRFakeAPIServiceConfig.h>
+#import <TwitterCore/TWTRNetworkSessionProvider.h>
+#import <TwitterCore/TWTRNilGuestSessionRefreshStrategy.h>
+#import <TwitterCore/TWTRSession.h>
+#import <TwitterCore/TWTRSessionFixtureLoader.h>
+#import <TwitterCore/TWTRSessionRefreshStrategy.h>
+#import <TwitterCore/TWTRSessionStore.h>
+#import <TwitterCore/TWTRTestCase.h>
+#import <TwitterCore/TWTRTestGuestSessionRefreshStrategy.h>
 #import "TWTRUserSessionStore_Private.h"
 
 @interface TWTRSessionStore ()

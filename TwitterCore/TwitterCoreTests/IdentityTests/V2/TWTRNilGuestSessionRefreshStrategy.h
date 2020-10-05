@@ -15,7 +15,7 @@
  *
  */
 
-#import "TWTRSessionRefreshStrategy.h"
+#import <TwitterCore/TWTRSessionRefreshStrategy.h>
 
 /**
  *  Strategy that determines sessions to be expired but never succeeds in refreshing the session.

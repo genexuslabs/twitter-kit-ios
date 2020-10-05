@@ -21,7 +21,7 @@
 
 #import <Foundation/Foundation.h>
 #import <TwitterCore/TwitterCore.h>
-#import "TWTRAuthenticationConstants.h"
+#import <TwitterCore/TWTRAuthenticationConstants.h>
 
 /**
  * The TWTRAuthenticator has been deprecated. Users should use the TWTRSessionStore
