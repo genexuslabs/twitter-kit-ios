@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRNSCodingUtil_h
+#define TWTRNSCodingUtil_h
+
 /**
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
@@ -30,3 +33,5 @@ FOUNDATION_EXTERN NSString *const TWTRValidatedDictionaryEncoderKey;
 + (void)encodeLongLong:(long long)val forKey:(NSString *)key encoder:(NSCoder *)encoder;
 
 @end
+
+#endif /* TWTRNSCodingUtil_h */

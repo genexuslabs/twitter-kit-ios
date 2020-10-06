@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRSEImageDownloader_h
+#define TWTRSEImageDownloader_h
+
 @import UIKit;
 
 NS_ASSUME_NONNULL_BEGIN
@@ -38,3 +41,5 @@ typedef void (^TWTRSEImageDownloadCompletion)(UIImage *_Nullable image, NSError 
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif /* TWTRSEImageDownloader_h */

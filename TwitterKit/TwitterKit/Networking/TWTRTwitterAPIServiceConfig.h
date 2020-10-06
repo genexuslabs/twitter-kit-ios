@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRTwitterAPIServiceConfig_h
+#define TWTRTwitterAPIServiceConfig_h
+
 /**
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
@@ -32,3 +35,5 @@
 @interface TWTRTwitterCardsServiceConfig : NSObject <TWTRAPIServiceConfig>
 
 @end
+
+#endif /* TWTRTwitterAPIServiceConfig_h */

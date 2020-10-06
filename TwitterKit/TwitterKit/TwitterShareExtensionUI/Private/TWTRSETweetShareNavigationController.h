@@ -15,8 +15,13 @@
  *
  */
 
+#ifndef TWTRSETweetShareNavigationController_h
+#define TWTRSETweetShareNavigationController_h
+
 @import UIKit;
 
 @interface TWTRSETweetShareNavigationController : UINavigationController
 
 @end
+
+#endif /* TWTRSETweetShareNavigationController_h */

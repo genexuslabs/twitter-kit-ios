@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRSEGeoTagging_h
+#define TWTRSEGeoTagging_h
+
 @import Foundation;
 
 @class CLLocation;
@@ -31,3 +34,5 @@ typedef void (^TWTRSEGeoTaggingCompletion)(NSArray<id<TWTRSEGeoPlace>> *_Nullabl
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif /* TWTRSEGeoTagging_h */

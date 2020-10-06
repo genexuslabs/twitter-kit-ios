@@ -16,7 +16,7 @@
  */
 
 #import "TWTRMoPubVersionChecker.h"
-#import <MoPub/MoPub.h>
+@import MoPub;
 #import <math.h>
 
 static NSInteger IntegerVersionFromStringVersion(NSString *version)

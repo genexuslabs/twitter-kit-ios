@@ -32,6 +32,11 @@
 		22BA0E6C192560E400A9F03E /* TWTRPersistentStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BA0E6A192560E400A9F03E /* TWTRPersistentStore.m */; };
 		22BA0E6F192560F400A9F03E /* TWTRPersistentStoreTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BA0E6E192560F400A9F03E /* TWTRPersistentStoreTest.m */; };
 		290807801D4ABB9800CFBB6E /* TWTRTimelineViewControllerDelegateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2908077F1D4ABB9800CFBB6E /* TWTRTimelineViewControllerDelegateTests.m */; };
+		2B4EB31924F9F499003D6CEE /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4EB31824F9F499003D6CEE /* CoreServices.framework */; };
+		2B4EB31A24F9F5C8003D6CEE /* libTwitterKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A97654E518E0B29B00E25169 /* libTwitterKit.a */; };
+		2B500A8024FBF18500EEE584 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B500A7D24FBF18500EEE584 /* WebKit.framework */; };
+		2B500A8124FC1F6000EEE584 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4EB31824F9F499003D6CEE /* CoreServices.framework */; };
+		2B500A8524FC59FA00EEE584 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B500A7D24FBF18500EEE584 /* WebKit.framework */; };
 		321EF9AB1950D1DC002FEC63 /* TWTRNSCodingUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 321EF9A91950D1DC002FEC63 /* TWTRNSCodingUtil.h */; };
 		321EF9AC1950D1DC002FEC63 /* TWTRNSCodingUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 321EF9AA1950D1DC002FEC63 /* TWTRNSCodingUtil.m */; };
 		3255B3B81937E2D3005EE3CE /* TWTRTweetEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = 3255B3B61937E2D3005EE3CE /* TWTRTweetEntity.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -398,9 +403,7 @@
 		A9A7FF0E18E4AAA8008334E6 /* TWTRTwitter.h in Headers */ = {isa = PBXBuildFile; fileRef = A9A7FF0C18E4AAA8008334E6 /* TWTRTwitter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A9A7FF0F18E4AAA8008334E6 /* TWTRTwitter.m in Sources */ = {isa = PBXBuildFile; fileRef = A9A7FF0D18E4AAA8008334E6 /* TWTRTwitter.m */; };
 		A9A955B919903E5E0074867E /* TWTRTwitter_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = A9A955B819903E5E0074867E /* TWTRTwitter_Private.h */; };
-		AA3E099220119CC000792255 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA3E099120119CA500792255 /* MobileCoreServices.framework */; };
 		AA3E099920125E9100792255 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAF0C9EE20119BB40057F438 /* CoreLocation.framework */; };
-		AA3E099A20125EBC00792255 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA3E099120119CA500792255 /* MobileCoreServices.framework */; };
 		AA3E099C20125EC600792255 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA3E099B20125EC600792255 /* MapKit.framework */; };
 		AAC420721F561C9F008189E1 /* TWTRVideoPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC4206F1F561C9F008189E1 /* TWTRVideoPlayerView.m */; };
 		AAC420791F561CB3008189E1 /* TWTRVideoPlayerView.h in Headers */ = {isa = PBXBuildFile; fileRef = AAC4206E1F561C9F008189E1 /* TWTRVideoPlayerView.h */; };
@@ -512,7 +515,6 @@
 		BFE8393F1ADF15E40035CBA1 /* TWTRTimelineType.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE8393E1ADF15E40035CBA1 /* TWTRTimelineType.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BFE839421ADF16C70035CBA1 /* TWTRConstants_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE839401ADF16C70035CBA1 /* TWTRConstants_Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		BFE839431ADF16C70035CBA1 /* TWTRConstants_Private.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE839411ADF16C70035CBA1 /* TWTRConstants_Private.m */; };
-		BFE839801ADF237A0035CBA1 /* libTwitterKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A97654E518E0B29B00E25169 /* libTwitterKit.a */; };
 		BFE839831ADF24CD0035CBA1 /* TWTRKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B964454199BDF27002117B5 /* TWTRKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BFE839871ADF283C0035CBA1 /* TWTRTimelineDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 374250F01A82C219003CFAC2 /* TWTRTimelineDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BFE839891ADF28490035CBA1 /* TWTRTimelineParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 373C8A0F1A83F555005A02D9 /* TWTRTimelineParser.h */; };
@@ -763,6 +765,8 @@
 		22BA0E6A192560E400A9F03E /* TWTRPersistentStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTRPersistentStore.m; sourceTree = "<group>"; };
 		22BA0E6E192560F400A9F03E /* TWTRPersistentStoreTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTRPersistentStoreTest.m; sourceTree = "<group>"; };
 		2908077F1D4ABB9800CFBB6E /* TWTRTimelineViewControllerDelegateTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTRTimelineViewControllerDelegateTests.m; sourceTree = "<group>"; };
+		2B4EB31824F9F499003D6CEE /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		2B500A7D24FBF18500EEE584 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/iOSSupport/System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		321EF9A91950D1DC002FEC63 /* TWTRNSCodingUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTRNSCodingUtil.h; sourceTree = "<group>"; };
 		321EF9AA1950D1DC002FEC63 /* TWTRNSCodingUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = TWTRNSCodingUtil.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		3255B3B61937E2D3005EE3CE /* TWTRTweetEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTRTweetEntity.h; sourceTree = "<group>"; };
@@ -869,7 +873,7 @@
 		3777840A1E96B8D200BC4830 /* TWTRStubTwitterClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWTRStubTwitterClient.h; path = ../shared/TwitterTestFoundation/URLMocking/TWTRStubTwitterClient.h; sourceTree = SOURCE_ROOT; };
 		3777840B1E96B8D200BC4830 /* TWTRStubTwitterClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWTRStubTwitterClient.m; path = ../shared/TwitterTestFoundation/URLMocking/TWTRStubTwitterClient.m; sourceTree = SOURCE_ROOT; };
 		377941441E96DA8D0049A022 /* OCMock.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCMock.framework; path = ../vendor/OCMock.framework; sourceTree = "<group>"; };
-		3779414F1E96DB610049A022 /* OCMock.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCMock.framework; path = ../../vendor/OCMock.framework; sourceTree = "<group>"; };
+		3779414F1E96DB610049A022 /* OCMock.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OCMock.framework; sourceTree = "<group>"; };
 		377AF9301E7A00EB004099F9 /* TWTRComposerAccountTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWTRComposerAccountTests.m; path = SocialTests/TWTRComposerAccountTests.m; sourceTree = "<group>"; };
 		377AF9321E7A0359004099F9 /* TWTRSharedComposerWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTRSharedComposerWrapper.h; sourceTree = "<group>"; };
 		377AF9331E7A0359004099F9 /* TWTRSharedComposerWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTRSharedComposerWrapper.m; sourceTree = "<group>"; };
@@ -1113,7 +1117,7 @@
 		A966541418EB687000B61CEE /* TwitterKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwitterKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A97654E518E0B29B00E25169 /* libTwitterKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTwitterKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A97654E818E0B29B00E25169 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		A97654F618E0B29B00E25169 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		A97654F618E0B29B00E25169 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = System/Library/Frameworks/XCTest.framework; sourceTree = SDKROOT; };
 		A976552E18E0B45400E25169 /* TWTRWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTRWebViewController.h; sourceTree = "<group>"; };
 		A976552F18E0B45400E25169 /* TWTRWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTRWebViewController.m; sourceTree = "<group>"; };
 		A9A7FF0C18E4AAA8008334E6 /* TWTRTwitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = TWTRTwitter.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
@@ -1343,8 +1347,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B500A8524FC59FA00EEE584 /* WebKit.framework in Frameworks */,
+				2B500A8124FC1F6000EEE584 /* CoreServices.framework in Frameworks */,
 				AA3E099C20125EC600792255 /* MapKit.framework in Frameworks */,
-				AA3E099A20125EBC00792255 /* MobileCoreServices.framework in Frameworks */,
 				AA3E099920125E9100792255 /* CoreLocation.framework in Frameworks */,
 				377941501E96DB610049A022 /* OCMock.framework in Frameworks */,
 				3754A64F1CCACCC10044E159 /* SafariServices.framework in Frameworks */,
@@ -1382,7 +1387,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA3E099220119CC000792255 /* MobileCoreServices.framework in Frameworks */,
+				2B500A8024FBF18500EEE584 /* WebKit.framework in Frameworks */,
 				AAF0C9F220119C2C0057F438 /* MapKit.framework in Frameworks */,
 				AAF0C9F120119C0A0057F438 /* CoreLocation.framework in Frameworks */,
 				37ED04661CE3E81C003DC129 /* SafariServices.framework in Frameworks */,
@@ -1392,13 +1397,14 @@
 				DB22426C1C3F22AB008A6DC7 /* Social.framework in Frameworks */,
 				DB22426B1C3F22A7008A6DC7 /* Accounts.framework in Frameworks */,
 				DB22426A1C3F2292008A6DC7 /* AVFoundation.framework in Frameworks */,
+				2B4EB31924F9F499003D6CEE /* CoreServices.framework in Frameworks */,
 				DB2242691C3F228B008A6DC7 /* CoreMedia.framework in Frameworks */,
 				DB2242681C3F2194008A6DC7 /* Foundation.framework in Frameworks */,
 				DB2242671C3F218F008A6DC7 /* UIKit.framework in Frameworks */,
 				DB2242661C3F2188008A6DC7 /* CoreGraphics.framework in Frameworks */,
 				DB2242611C3F2181008A6DC7 /* CoreData.framework in Frameworks */,
 				DB22427F1C3F24A2008A6DC7 /* libTwitterCore.a in Frameworks */,
-				BFE839801ADF237A0035CBA1 /* libTwitterKit.a in Frameworks */,
+				2B4EB31A24F9F5C8003D6CEE /* libTwitterKit.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1408,6 +1414,8 @@
 		208ACAB41FB2800900008F42 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2B500A7D24FBF18500EEE584 /* WebKit.framework */,
+				2B4EB31824F9F499003D6CEE /* CoreServices.framework */,
 				AA3E099B20125EC600792255 /* MapKit.framework */,
 				AA3E099120119CA500792255 /* MobileCoreServices.framework */,
 				AAF0C9F020119BED0057F438 /* MapKit.framework */,
@@ -1475,7 +1483,7 @@
 				377784031E96B8D200BC4830 /* URLMocking */,
 			);
 			name = TwitterTestFoundation;
-			path = ../../shared/TwitterTestFoundation;
+			path = ../shared/TwitterTestFoundation;
 			sourceTree = "<group>";
 		};
 		377783EF1E96B8D200BC4830 /* Base */ = {
@@ -1531,7 +1539,7 @@
 				379A6D501E95B95200625984 /* metamacros.h */,
 			);
 			name = libextobjc;
-			path = ../../vendor/libextobjc;
+			path = ../TwitterKit/libextobjc;
 			sourceTree = "<group>";
 		};
 		37B6899A198B1C8200E772CA /* Controllers */ = {
@@ -2414,7 +2422,8 @@
 				377783EE1E96B8D200BC4830 /* TwitterTestFoundation */,
 				379A6D4D1E95B95200625984 /* libextobjc */,
 			);
-			path = Vendor;
+			name = Vendor;
+			path = ../vendor;
 			sourceTree = "<group>";
 		};
 		DB2241711C3DA5F6008A6DC7 /* Supporting Files */ = {
@@ -2591,6 +2600,7 @@
 				3777840C1E96B8D200BC4830 /* TWTRTestCase.h in Headers */,
 				37B008261C0CF468009D27D5 /* TWTRImageTestHelper.h in Headers */,
 				20563D0F1ED4F6FF0094DAB3 /* TWTRStubMobileSSO.h in Headers */,
+				2B500A8324FC20AE00EEE584 /* TWTRTestCase.h in Headers */,
 				3DF7B23F1B74330300E9A7E1 /* TWTRTestTweetViewDelegate.h in Headers */,
 				3777841E1E96B8D200BC4830 /* TWTRStubTimelineDataSource.h in Headers */,
 				37D649AD1CC57B2F009D47EF /* TWTRSampleSubscriber.h in Headers */,
@@ -2960,7 +2970,7 @@
 		A97654DD18E0B29B00E25169 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = Twitter;
 				TargetAttributes = {
 					A966541318EB687000B61CEE = {
@@ -2975,12 +2985,13 @@
 			};
 			buildConfigurationList = A97654E018E0B29B00E25169 /* Build configuration list for PBXProject "TwitterKit" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				ko,
 				ja,
+				Base,
 			);
 			mainGroup = A97654DC18E0B29B00E25169;
 			productRefGroup = A97654E618E0B29B00E25169 /* Products */;
@@ -3448,13 +3459,18 @@
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(PROJECT_DIR)/../shared/\"",
+					"$(PROJECT_DIR)/../vendor",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/../TwitterCore/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Headers/",
+					"$(PROJECT_DIR)/../TwitterCore/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/PrivateHeaders/",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.twitter.sdk.ios.${PRODUCT_NAME:rfc1034identifier}";
 				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = "TwitterKitTests/TwitterKit Tests-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
@@ -3467,13 +3483,18 @@
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(PROJECT_DIR)/../shared/\"",
+					"$(PROJECT_DIR)/../vendor",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/../TwitterCore/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Headers/",
+					"$(PROJECT_DIR)/../TwitterCore/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/PrivateHeaders/",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.twitter.sdk.ios.${PRODUCT_NAME:rfc1034identifier}";
 				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = "TwitterKitTests/TwitterKit Tests-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
@@ -3484,12 +3505,20 @@
 			buildSettings = {
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_MODULES_AUTOLINK = NO;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -3500,10 +3529,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = (
-					"$(TARGET_BUILD_DIR)/Headers",
-					"$(BUILT_PRODUCTS_DIR)/Headers",
-				);
+				HEADER_SEARCH_PATHS = "$(TARGET_BUILD_DIR)/Headers";
 				ONLY_ACTIVE_ARCH = YES;
 			};
 			name = Debug;
@@ -3514,12 +3540,20 @@
 			buildSettings = {
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_MODULES_AUTOLINK = NO;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -3529,10 +3563,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = (
-					"$(TARGET_BUILD_DIR)/Headers",
-					"$(BUILT_PRODUCTS_DIR)/Headers",
-				);
+				HEADER_SEARCH_PATHS = "$(TARGET_BUILD_DIR)/Headers";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
@@ -3545,6 +3576,10 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/../vendor",
 					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../TwitterCore/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Headers/",
+					"$(PROJECT_DIR)/../TwitterCore/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/PrivateHeaders/",
 				);
 				SDKROOT = iphoneos;
 			};
@@ -3559,6 +3594,10 @@
 					"$(PROJECT_DIR)/../vendor",
 					"$(PROJECT_DIR)",
 				);
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../TwitterCore/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Headers/",
+					"$(PROJECT_DIR)/../TwitterCore/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/PrivateHeaders/",
+				);
 				SDKROOT = iphoneos;
 			};
 			name = Release;
@@ -3570,6 +3609,11 @@
 				BITCODE_GENERATION_MODE = bitcode;
 				CODE_SIGN_IDENTITY = "";
 				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../vendor";
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../TwitterCore/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Headers/",
+					"$(PROJECT_DIR)/../TwitterCore/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/PrivateHeaders/",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -3587,6 +3631,11 @@
 				BITCODE_GENERATION_MODE = bitcode;
 				CODE_SIGN_IDENTITY = "";
 				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../vendor";
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../TwitterCore/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Headers/",
+					"$(PROJECT_DIR)/../TwitterCore/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/PrivateHeaders/",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",

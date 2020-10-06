@@ -1,3 +1,6 @@
+#ifndef TWTRAttributedLabel_h
+#define TWTRAttributedLabel_h
+
 // TWTRAttributedLabel.h
 //
 // Copyright (c) 2011 Mattt Thompson (http://mattt.me)
@@ -312,3 +315,5 @@ extern NSString *const kTWTRBackgroundCornerRadiusAttributeName;
 - (void)attributedLabel:(TWTRAttributedLabel *)label didTapTweetUserMentionEntity:(TWTRTweetUserMentionEntity *)userMentionEntity;
 
 @end
+
+#endif /* TWTRAttributedLabel_h */

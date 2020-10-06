@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRSETweetAttachment_h
+#define TWTRSETweetAttachment_h
+
 @import Foundation.NSObject;
 
 @class NSItemProvider;
@@ -92,3 +95,5 @@ typedef void (^TWTRSETweetAttachmentAfterURLLoadBlock)(void);
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif /* TWTRSETweetAttachment_h */

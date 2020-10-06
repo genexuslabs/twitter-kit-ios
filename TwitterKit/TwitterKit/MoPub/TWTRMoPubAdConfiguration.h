@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRMoPubAdConfiguration_h
+#define TWTRMoPubAdConfiguration_h
+
 #import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
@@ -51,3 +54,5 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif /* TWTRMoPubAdConfiguration_h */

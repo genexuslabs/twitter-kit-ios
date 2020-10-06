@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRSETweetComposerViewController_h
+#define TWTRSETweetComposerViewController_h
+
 @import UIKit.UIViewController;
 
 @class TWTRSETweetShareConfiguration;
@@ -38,3 +41,5 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif /* TWTRSETweetComposerViewController_h */

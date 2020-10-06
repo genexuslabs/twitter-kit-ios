@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRTweetRepository_h
+#define TWTRTweetRepository_h
+
 /**
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
@@ -74,3 +77,5 @@ typedef void (^TWTRTweetRepoSingleTweetCompletion)(TWTRTweet *_Nullable tweet, N
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif /* TWTRTweetRepository_h */

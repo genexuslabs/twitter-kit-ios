@@ -1,3 +1,6 @@
+#ifndef TWTRTwitterTextEntity_h
+#define TWTRTwitterTextEntity_h
+
 //
 //  TwitterTextEntity.h
 //
@@ -32,3 +35,5 @@ typedef NS_ENUM(NSUInteger, TWTRTwitterTextEntityType) {
 + (instancetype)entityWithType:(TWTRTwitterTextEntityType)type range:(NSRange)range;
 
 @end
+
+#endif /* TWTRTwitterTextEntity_h */

@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRSETweetShareViewController_h
+#define TWTRSETweetShareViewController_h
+
 @import UIKit;
 
 @class TWTRSETweetShareConfiguration;
@@ -36,3 +39,5 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif /* TWTRSETweetShareViewController_h */

@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRTimelineDelegate_h
+#define TWTRTimelineDelegate_h
+
 #import <UIKit/UIKit.h>
 
 @class TWTRTweet;
@@ -49,3 +52,5 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif /* TWTRTimelineDelegate_h */

@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRTweetShareItemProvider_Private_h
+#define TWTRTweetShareItemProvider_Private_h
+
 /**
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
@@ -29,3 +32,5 @@ FOUNDATION_EXTERN NSString *const TWTRTweetShareItemProviderItemFormatString;
 @interface TWTRTweetShareItemProvider ()
 
 @end
+
+#endif /* TWTRTweetShareItemProvider_Private_h */

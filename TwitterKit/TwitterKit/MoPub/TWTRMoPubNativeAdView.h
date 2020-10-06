@@ -19,7 +19,7 @@
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
 
-#import <MoPub/MPNativeAdRendering.h>
+@import MoPub;
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN

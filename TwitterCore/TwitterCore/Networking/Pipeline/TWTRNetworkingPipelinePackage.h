@@ -20,7 +20,7 @@
  */
 
 #import <TwitterCore/TWTRSessionStore.h>
-#import "TWTRNetworkingPipeline.h"
+#import <TwitterCore/TWTRNetworkingPipeline.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

@@ -15,15 +15,19 @@
  *
  */
 
+#ifndef TWTRWebViewController_h
+#define TWTRWebViewController_h
+
 /**
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
 
 #import <UIKit/UIKit.h>
+@import  WebKit;
 
 @class TWTRWebViewController;
 
-typedef BOOL (^TWTRWebViewControllerShouldLoadCompletion)(UIViewController *controller, NSURLRequest *request, UIWebViewNavigationType navigationType);
+typedef BOOL (^TWTRWebViewControllerShouldLoadCompletion)(UIViewController *controller, NSURLRequest *request, WKNavigationType navigationType);
 typedef void (^TWTRWebViewControllerCancelCompletion)(TWTRWebViewController *webViewController);
 typedef void (^TWTRWebViewControllerHandleError)(NSError *error);
 
@@ -36,3 +40,5 @@ typedef void (^TWTRWebViewControllerHandleError)(NSError *error);
 - (void)enableCancelButtonWithCancelCompletion:(TWTRWebViewControllerCancelCompletion)cancelCompletion;
 
 @end
+
+#endif /* TWTRWebViewController_h */

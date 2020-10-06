@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRSELocationSelectionTableViewController_h
+#define TWTRSELocationSelectionTableViewController_h
+
 #import "TWTRSESelectionTableViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
@@ -53,3 +56,5 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif /* TWTRSELocationSelectionTableViewController_h */

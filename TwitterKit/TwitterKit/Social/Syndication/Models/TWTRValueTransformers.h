@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRValueTransformers_h
+#define TWTRValueTransformers_h
+
 /**
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
@@ -49,3 +52,5 @@ extern NSString *const TWTRAspectRatioArrayTransformerName;
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif /* TWTRValueTransformers_h */

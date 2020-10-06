@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRTweetViewMetrics_h
+#define TWTRTweetViewMetrics_h
+
 /**
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
@@ -45,3 +48,5 @@ FOUNDATION_EXTERN CGFloat const TWTRTweetViewMinWidth;
 @property (nonatomic, readonly) NSDictionary *metricsDictionary;
 
 @end
+
+#endif /* TWTRTweetViewMetrics_h */

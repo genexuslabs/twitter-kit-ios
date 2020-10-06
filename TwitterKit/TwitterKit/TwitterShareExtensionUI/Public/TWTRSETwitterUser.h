@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRSETwitterUser_h
+#define TWTRSETwitterUser_h
+
 @protocol TWTRSEAccount;
 
 NS_ASSUME_NONNULL_BEGIN
@@ -28,3 +31,5 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif /* TWTRSETwitterUser_h */

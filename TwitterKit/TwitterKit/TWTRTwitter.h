@@ -15,10 +15,13 @@
  *
  */
 
+#ifndef TWTRTwitter_h
+#define TWTRTwitter_h
+
 #import <TwitterCore/TWTRSession.h>
 #import <TwitterCore/TWTRSessionStore.h>
 #import <UIKit/UIKit.h>
-#import "TWTRAPIClient.h"
+#import <TwitterKit/TWTRAPIClient.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -124,3 +127,5 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif /* TWTRTwitter_h */

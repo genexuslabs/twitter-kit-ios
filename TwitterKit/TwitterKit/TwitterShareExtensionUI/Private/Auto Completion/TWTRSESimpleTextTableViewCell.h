@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRSESimpleTextTableViewCell_h
+#define TWTRSESimpleTextTableViewCell_h
+
 @import UIKit;
 
 #import "TWTRSEBaseTableViewCell.h"
@@ -22,3 +25,5 @@
 @interface TWTRSESimpleTextTableViewCell : TWTRSEBaseTableViewCell
 
 @end
+
+#endif /* TWTRSESimpleTextTableViewCell_h */

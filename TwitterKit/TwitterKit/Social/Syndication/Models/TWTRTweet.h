@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRTweet_h
+#define TWTRTweet_h
+
 #import <Foundation/Foundation.h>
 #import <TwitterKit/TWTRJSONConvertible.h>
 
@@ -92,7 +95,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  *  The permalink URL for this Tweet.
  *
- *  Suitable for loading in a `UIWebView`, `WKWebView` or passing to Safari:
+ *  Suitable for loading in a `WKWebView`, `WKWebView` or passing to Safari:
  *
  *  `[[UIApplication sharedApplication] openURL:tweet.permalink];`
  */
@@ -164,3 +167,5 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif /* TWTRTweet_h */

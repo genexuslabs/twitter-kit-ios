@@ -19,7 +19,7 @@
  This header is private to the Twitter Core SDK and not exposed for public SDK consumption
  */
 
-#import "TWTRGuestSession.h"
+#import <TwitterCore/TWTRGuestSession.h>
 
 @interface TWTRGuestSession (Private)
 

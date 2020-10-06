@@ -15,7 +15,7 @@
  *
  */
 
-#import "TWTRSessionRefreshStrategy.h"
+#import <TwitterCore/TWTRSessionRefreshStrategy.h>
 
 @interface TWTRTestGuestSessionRefreshStrategy : NSObject <TWTRSessionRefreshStrategy>
 

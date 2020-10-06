@@ -15,8 +15,11 @@
  *
  */
 
+#ifndef TWTRTweetUserMentionEntity_h
+#define TWTRTweetUserMentionEntity_h
+
 #import <TwitterKit/TWTRJSONConvertible.h>
-#import "TWTRTweetEntity.h"
+#import <TwitterKit/TWTRTweetEntity.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -43,3 +46,5 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif /* TWTRTweetUserMentionEntity_h */

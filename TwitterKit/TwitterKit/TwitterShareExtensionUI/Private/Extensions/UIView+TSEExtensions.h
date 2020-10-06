@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef UIView_TSEExtensions_h
+#define UIView_TSEExtensions_h
+
 @import UIKit;
 
 /// Using a C function instead of a category on UIView because categories may not be loaded in apps
@@ -33,3 +36,5 @@ NS_INLINE BOOL TWTRSEUIIsIOS11OrGreater()
     return YES;
 }
 #endif
+
+#endif /* UIView_TSEExtensions_h */

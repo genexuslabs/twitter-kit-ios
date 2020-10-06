@@ -102,7 +102,7 @@
         @strongify(self)[self failWithError:error];
     };
 
-    webVC.shouldStartLoadWithRequest = ^BOOL(UIViewController *controller, NSURLRequest *request, UIWebViewNavigationType navType) {
+    webVC.shouldStartLoadWithRequest = ^BOOL(UIViewController *controller, NSURLRequest *request, WKNavigationType navType) {
         @strongify(self) NSURL *URL = request.URL;
         if ([TWTRSDKScheme isEqualToString:URL.scheme] && [TWTRSDKRedirectHost isEqualToString:URL.host]) {
             [self handleTwitterRedirectRequest:request];

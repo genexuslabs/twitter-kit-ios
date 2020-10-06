@@ -15,9 +15,7 @@
  *
  */
 
-#import <MoPub/MPNativeAdRendererConfiguration.h>
-#import <MoPub/MPNativeAdRequestTargeting.h>
-#import <MoPub/MPStaticNativeAdRendererSettings.h>
+@import MoPub;
 #import "TWTRMoPubAdConfiguration.h"
 #import "TWTRMoPubAdConfiguration_Private.h"
 #import "TWTRMoPubNativeAdContainerView.h"

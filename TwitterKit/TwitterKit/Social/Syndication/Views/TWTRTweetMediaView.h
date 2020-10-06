@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRTweetMediaView_h
+#define TWTRTweetMediaView_h
+
 /**
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
@@ -46,7 +49,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly) TWTRTweetViewStyle style;
 
 /**
- *  The view controller from which to present the login UIWebView or
+ *  The view controller from which to present the login WKWebView or
  *  account picker sheet.
  */
 @property (nonatomic, weak, null_resettable) UIViewController *presenterViewController;
@@ -152,3 +155,5 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif /* TWTRTweetMediaView_h */

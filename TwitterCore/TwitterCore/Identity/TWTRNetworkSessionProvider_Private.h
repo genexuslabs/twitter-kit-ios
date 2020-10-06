@@ -22,7 +22,7 @@
 @class TWTRAuthConfig;
 @protocol TWTRAPIServiceConfig;
 
-#import "TWTRNetworkSessionProvider.h"
+#import <TwitterCore/TWTRNetworkSessionProvider.h>
 
 @interface TWTRNetworkSessionProvider ()
 

@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTROAuthSigning_h
+#define TWTROAuthSigning_h
+
 #import <TwitterCore/TWTRCoreOAuthSigning.h>
 
 @class TWTRAuthConfig;
@@ -54,3 +57,5 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif /* TWTROAuthSigning_h */

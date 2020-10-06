@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRTweetPresenter_h
+#define TWTRTweetPresenter_h
+
 /**
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
@@ -89,3 +92,5 @@ typedef NS_OPTIONS(NSInteger, TWTRTweetEntityDisplayType) {
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif /* TWTRTweetPresenter_h */

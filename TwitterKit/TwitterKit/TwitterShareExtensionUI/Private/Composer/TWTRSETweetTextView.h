@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRSETweetTextView_h
+#define TWTRSETweetTextView_h
+
 @import UIKit;
 
 @interface TWTRSETweetTextView : UITextView
@@ -28,3 +31,5 @@
 - (instancetype)initWithCoder:(NSCoder *)aDecoder NS_UNAVAILABLE;
 
 @end
+
+#endif /* TWTRSETweetTextView_h */

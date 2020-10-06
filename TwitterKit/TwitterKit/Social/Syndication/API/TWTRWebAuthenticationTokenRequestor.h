@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRWebAuthenticationTokenRequestor_h
+#define TWTRWebAuthenticationTokenRequestor_h
+
 /**
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
@@ -36,3 +39,5 @@ typedef void (^TWTRAuthenticationTokenRequestCompletion)(NSString *_Nullable tok
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif /* TWTRWebAuthenticationTokenRequestor_h */

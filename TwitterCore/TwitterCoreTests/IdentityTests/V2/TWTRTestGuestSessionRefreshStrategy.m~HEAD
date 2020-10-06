@@ -9,7 +9,7 @@
 #import <TwitterCore/TWTRAPIErrorCode.h>
 #import <TwitterCore/TWTRAuthenticationConstants.h>
 #import <TwitterCore/TWTRGuestSession.h>
-#import "TWTRTestGuestSessionRefreshStrategy.h"
+#import <TwitterCore/TWTRTestGuestSessionRefreshStrategy.h>
 
 @implementation TWTRTestGuestSessionRefreshStrategy
 

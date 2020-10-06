@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRTimelineFilterManager_h
+#define TWTRTimelineFilterManager_h
+
 /**
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
@@ -35,3 +38,5 @@
 - (nonnull instancetype)init NS_UNAVAILABLE;
 - (nonnull instancetype) new NS_UNAVAILABLE;
 @end
+
+#endif /* TWTRTimelineFilterManager_h */

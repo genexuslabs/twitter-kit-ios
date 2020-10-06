@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRShareButton_h
+#define TWTRShareButton_h
+
 /**
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
@@ -63,3 +66,5 @@ typedef NS_ENUM(NSInteger, TWTRShareButtonSize) {
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif /* TWTRShareButton_h */

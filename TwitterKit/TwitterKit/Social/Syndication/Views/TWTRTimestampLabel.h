@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRTimestampLabel_h
+#define TWTRTimestampLabel_h
+
 /**
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
@@ -27,3 +30,5 @@
 @property (nonatomic, nullable) NSDate *date;
 
 @end
+
+#endif /* TWTRTimestampLabel_h */

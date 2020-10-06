@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRSELocalizedString_h
+#define TWTRSELocalizedString_h
+
 #import "TWTRSELocalizedResources.h"
 
 @import Foundation;
@@ -80,3 +83,5 @@ FOUNDATION_EXTERN Class<TWTRSELocalizedResources> TSELocalized;
 
 /* "Twitter" */
 #define TSEUI_LOCALIZABLE_SHARE_EXT_TWITTER_TITLE @"SHARE_EXT_TWITTER_TITLE"
+
+#endif /* TWTRSELocalizedString_h */

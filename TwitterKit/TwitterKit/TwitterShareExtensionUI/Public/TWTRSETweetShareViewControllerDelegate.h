@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRSETweetShareViewControllerDelegate_h
+#define TWTRSETweetShareViewControllerDelegate_h
+
 @import Foundation.NSObject;
 
 @class TWTRSETweet;
@@ -66,3 +69,5 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif /* TWTRSETweetShareViewControllerDelegate_h */

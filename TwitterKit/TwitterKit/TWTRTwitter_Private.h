@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRTwitter_Private_h
+#define TWTRTwitter_Private_h
+
 /**
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
@@ -58,3 +61,5 @@
 - (void)userSessionVerifierNeedsSessionVerification:(TWTRUserSessionVerifier *)userSessionVerifier;
 
 @end
+
+#endif /* TWTRTwitter_Private_h */

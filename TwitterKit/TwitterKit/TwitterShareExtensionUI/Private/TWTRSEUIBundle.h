@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRSEUIBundle_h
+#define TWTRSEUIBundle_h
+
 @import Foundation.NSBundle;
 
 @class UIImage;
@@ -28,3 +31,5 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif /* TWTRSEUIBundle_h */

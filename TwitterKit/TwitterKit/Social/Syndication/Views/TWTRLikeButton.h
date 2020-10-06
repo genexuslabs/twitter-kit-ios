@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRLikeButton_h
+#define TWTRLikeButton_h
+
 /**
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
@@ -36,7 +39,7 @@ typedef NS_ENUM(NSInteger, TWTRLikeButtonSize) {
 @interface TWTRLikeButton : UIButton
 
 /**
- *  The view controller from which to present the login UIWebView or
+ *  The view controller from which to present the login WKWebView or
  *  account picker sheet.
  */
 @property (nonatomic, weak, null_resettable) UIViewController *presenterViewController;
@@ -63,3 +66,5 @@ typedef NS_ENUM(NSInteger, TWTRLikeButtonSize) {
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif /* TWTRLikeButton_h */

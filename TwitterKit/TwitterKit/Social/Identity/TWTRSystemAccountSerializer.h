@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRSystemAccountSerializer_h
+#define TWTRSystemAccountSerializer_h
+
 /**
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
@@ -33,3 +36,5 @@ typedef void (^TWTRSystemAccountCompletion)(BOOL success, NSError *_Nullable err
  */
 + (void)saveToSystemAccountCredentials:(nonnull NSDictionary *)authDict completion:(nullable TWTRSystemAccountCompletion)completion;
 @end
+
+#endif /* TWTRSystemAccountSerializer_h */

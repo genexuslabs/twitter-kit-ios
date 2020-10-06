@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRVideoCTAView_h
+#define TWTRVideoCTAView_h
+
 /**
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
@@ -38,3 +41,5 @@
 - (void)videoCTAView:(TWTRVideoCTAView *)CTAView willDeeplinkToTargetURL:(NSURL *)targetURL;
 
 @end
+
+#endif /* TWTRVideoCTAView_h */

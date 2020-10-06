@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRWebAuthenticationViewController_h
+#define TWTRWebAuthenticationViewController_h
+
 /**
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
@@ -45,3 +48,5 @@ typedef void (^TWTRWebAuthenticationViewControllerCompletion)(TWTRSession *_Null
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif /* TWTRWebAuthenticationViewController_h */

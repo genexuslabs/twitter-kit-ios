@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRMediaEntitySize_h
+#define TWTRMediaEntitySize_h
+
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
@@ -69,3 +72,5 @@ FOUNDATION_EXTERN TWTRMediaEntitySizeResizingMode TWTRMediaEntitySizeResizingMod
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif /* TWTRMediaEntitySize_h */

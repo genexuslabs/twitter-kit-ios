@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRTweetView_Private_h
+#define TWTRTweetView_Private_h
+
 /**
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
@@ -57,3 +60,5 @@
 - (void)pauseVideo;
 
 @end
+
+#endif /* TWTRTweetView_Private_h */

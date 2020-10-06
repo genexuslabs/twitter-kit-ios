@@ -32,7 +32,7 @@
 
 NSString *const TWTRSocialAppProviderActionSheetCompletionKey = @"TWTRAppleSocialAuthProviderCompletion";
 
-@interface TWTRAppleSocialAuthenticaticationProvider () <UIActionSheetDelegate>
+@interface TWTRAppleSocialAuthenticaticationProvider ()
 
 @property (nonatomic, readonly) ACAccountStore *accountStore;
 @property (nonatomic) NSArray *accounts;
@@ -207,46 +207,37 @@ NSString *const TWTRSocialAppProviderActionSheetCompletionKey = @"TWTRAppleSocia
     TWTRParameterAssertOrReturn(completion);
 
     dispatch_async(dispatch_get_main_queue(), ^{
-        UIActionSheet *sheet = [self actionSheet];
-        objc_setAssociatedObject(sheet, (__bridge const void *)(TWTRSocialAppProviderActionSheetCompletionKey), completion, OBJC_ASSOCIATION_COPY_NONATOMIC);
+        UIAlertController *alertController = [self alertControllerWithCompletion:completion];
+		UIViewController *presentingVC = TWTRUtils.topViewController;
+		
+		if (UIDevice.currentDevice.userInterfaceIdiom == UIUserInterfaceIdiomPad) {
+			UIView *view = presentingVC.view;
+			alertController.popoverPresentationController.sourceView = view;
+			alertController.popoverPresentationController.sourceRect = CGRectMake(CGRectGetMidX(view.bounds), CGRectGetMidY(view.bounds), 0, 0);
+			alertController.popoverPresentationController.permittedArrowDirections = 0;
+		}
 
-        // This shows the picker in the middle of the screen. It doesn't look good,
-        // and the UIAlertController on iOS 8 would be the solution for this, but we
-        // don't officially support iPad at this time so this will do.
-        [sheet showInView:[TWTRUtils topViewController].view];
+		[presentingVC presentViewController:alertController animated:UIView.areAnimationsEnabled completion:nil];
     });
 }
 
-- (UIActionSheet *)actionSheet
+- (UIAlertController *)alertControllerWithCompletion:(TWTRAuthenticationProviderCompletion)completion
 {
-    UIActionSheet *sheet = [UIActionSheet new];
-    sheet.delegate = self;
-    sheet.actionSheetStyle = UIActionSheetStyleBlackTranslucent;
-    for (ACAccount *account in self.accounts) {
-        NSString *title = [NSString stringWithFormat:@"@%@", account.username];
-        [sheet addButtonWithTitle:title];
-    }
-    sheet.cancelButtonIndex = [sheet addButtonWithTitle:NSLocalizedString(@"Cancel", nil)];
-
-    return sheet;
-}
-
-#pragma mark - UIActionSheet delegate
-
-- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
-{
-    if (buttonIndex == [actionSheet cancelButtonIndex]) {
-        [self actionSheetCancel:actionSheet];
-    } else {
-        TWTRAuthenticationProviderCompletion completion = objc_getAssociatedObject(actionSheet, (__bridge const void *)(TWTRSocialAppProviderActionSheetCompletionKey));
-        [self getAuthTokenWithAccount:[self accounts][(NSUInteger)buttonIndex] completion:completion];
-    }
-}
-
-- (void)actionSheetCancel:(UIActionSheet *)actionSheet
-{
-    TWTRAuthenticationProviderCompletion completion = objc_getAssociatedObject(actionSheet, (__bridge const void *)(TWTRSocialAppProviderActionSheetCompletionKey));
-    completion(nil, [NSError errorWithDomain:TWTRLogInErrorDomain code:TWTRLogInErrorCodeCancelled userInfo:@{ NSLocalizedDescriptionKey: @"User cancelled authentication." }]);
+	UIAlertController *alertController = [UIAlertController alertControllerWithTitle:nil message:nil preferredStyle:UIAlertControllerStyleActionSheet];
+	for (ACAccount *account in self.accounts) {
+		NSString *title = [NSString stringWithFormat:@"@%@", account.username];
+		UIAlertAction *action = [UIAlertAction actionWithTitle:title style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull _action) {
+			[self getAuthTokenWithAccount:account completion:completion];
+			
+		}];
+		[alertController addAction:action];
+	}
+	UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"Cancel", nil) style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+		completion(nil, [NSError errorWithDomain:TWTRLogInErrorDomain code:TWTRLogInErrorCodeCancelled userInfo:@{ NSLocalizedDescriptionKey: @"User cancelled authentication." }]);
+	}];
+	[alertController addAction:cancelAction];
+	
+	return alertController;
 }
 
 @end

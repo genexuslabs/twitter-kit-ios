@@ -20,7 +20,7 @@
  */
 
 #import <Foundation/Foundation.h>
-#import "TWTRNetworkingPipeline.h"
+#import <TwitterCore/TWTRNetworkingPipeline.h>
 
 /**
  * Abstraction to read off the `date` header from Twitter's API. This offset value can be used to

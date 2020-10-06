@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRPlayIcon_h
+#define TWTRPlayIcon_h
+
 /**
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
@@ -24,3 +27,5 @@
 @interface TWTRPlayIcon : UIImageView
 
 @end
+
+#endif /* TWTRPlayIcon_h */

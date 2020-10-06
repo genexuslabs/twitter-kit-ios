@@ -15,20 +15,20 @@
  *
  */
 
-#import "TWTRProfileHeaderView.h"
+#import <TwitterKit/TWTRProfileHeaderView.h>
 #import <TwitterCore/TWTRColorUtil.h>
-#import "TWTRBirdView.h"
-#import "TWTRFontUtil.h"
-#import "TWTRProfileView.h"
-#import "TWTRRetweetView.h"
-#import "TWTRTimestampLabel.h"
-#import "TWTRTweet.h"
-#import "TWTRTweetPresenter.h"
-#import "TWTRTweetViewMetrics.h"
-#import "TWTRTwitter_Private.h"
-#import "TWTRUser.h"
-#import "TWTRVerifiedView.h"
-#import "TWTRViewUtil.h"
+#import <TwitterKit/TWTRBirdView.h>
+#import <TwitterKit/TWTRFontUtil.h>
+#import <TwitterKit/TWTRProfileView.h>
+#import <TwitterKit/TWTRRetweetView.h>
+#import <TwitterKit/TWTRTimestampLabel.h>
+#import <TwitterKit/TWTRTweet.h>
+#import <TwitterKit/TWTRTweetPresenter.h>
+#import <TwitterKit/TWTRTweetViewMetrics.h>
+#import <TwitterKit/TWTRTwitter_Private.h>
+#import <TwitterKit/TWTRUser.h>
+#import <TwitterKit/TWTRVerifiedView.h>
+#import <TwitterKit/TWTRViewUtil.h>
 
 @interface TWTRProfileHeaderView ()
 

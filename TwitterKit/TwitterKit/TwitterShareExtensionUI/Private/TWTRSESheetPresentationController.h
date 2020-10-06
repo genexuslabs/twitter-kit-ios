@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRSESheetPresentationController_h
+#define TWTRSESheetPresentationController_h
+
 @import UIKit;
 
 /**
@@ -24,3 +27,5 @@
 @interface TWTRSESheetPresentationManager : NSObject <UIViewControllerTransitioningDelegate>
 
 @end
+
+#endif /* TWTRSESheetPresentationController_h */

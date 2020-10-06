@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRLocalizedResources_h
+#define TWTRLocalizedResources_h
+
 /**
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
@@ -27,3 +30,5 @@
 + (NSString *)localizedString:(NSString *)string;
 
 @end
+
+#endif /* TWTRLocalizedResources_h */

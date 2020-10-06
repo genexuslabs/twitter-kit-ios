@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRTwitterAPIConfiguration_h
+#define TWTRTwitterAPIConfiguration_h
+
 /**
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
@@ -50,3 +53,5 @@
 - (instancetype)initWithJSONDictionary:(NSDictionary *)dictionary;
 
 @end
+
+#endif /* TWTRTwitterAPIConfiguration_h */

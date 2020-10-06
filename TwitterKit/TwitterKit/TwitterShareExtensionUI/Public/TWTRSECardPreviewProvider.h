@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRSECardPreviewProvider_h
+#define TWTRSECardPreviewProvider_h
+
 @import Foundation.NSItemProvider;
 
 @class UIImage;
@@ -28,3 +31,5 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif /* TWTRSECardPreviewProvider_h */

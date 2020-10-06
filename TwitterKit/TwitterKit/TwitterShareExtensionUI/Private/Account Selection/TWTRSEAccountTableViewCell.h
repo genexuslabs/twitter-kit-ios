@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRSEAccountTableViewCell_h
+#define TWTRSEAccountTableViewCell_h
+
 @import UIKit;
 
 #import "TWTRSEBaseTableViewCell.h"
@@ -35,3 +38,5 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif /* TWTRSEAccountTableViewCell_h */

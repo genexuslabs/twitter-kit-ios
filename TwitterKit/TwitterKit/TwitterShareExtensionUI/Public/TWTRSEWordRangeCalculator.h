@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRSEWordRangeCalculator_h
+#define TWTRSEWordRangeCalculator_h
+
 @import Foundation.NSRange;
 
 @protocol TWTRSEWordRangeCalculator
@@ -37,3 +40,5 @@
 - (NSRange)wordRangeIncludingUnderscoreForIndex:(NSUInteger)index;
 
 @end
+
+#endif /* TWTRSEWordRangeCalculator_h */

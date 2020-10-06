@@ -20,7 +20,7 @@
  */
 
 #import <Foundation/Foundation.h>
-#import "TWTRAPIServiceConfig.h"
+#import <TwitterCore/TWTRAPIServiceConfig.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRVideoPlaybackRules_h
+#define TWTRVideoPlaybackRules_h
+
 /**
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
@@ -29,3 +32,5 @@
 + (BOOL)shouldAutoLoopForConfiguration:(TWTRVideoPlaybackConfiguration *)configuration;
 
 @end
+
+#endif /* TWTRVideoPlaybackRules_h */

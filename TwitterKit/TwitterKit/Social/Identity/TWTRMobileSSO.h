@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRMobileSSO_h
+#define TWTRMobileSSO_h
+
 /**
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
@@ -77,3 +80,5 @@ typedef void (^TWTRMobileSSOCompletion)(BOOL twitterAppInstalled);
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif /* TWTRMobileSSO_h */

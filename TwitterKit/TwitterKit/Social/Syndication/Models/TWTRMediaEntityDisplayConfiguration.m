@@ -15,16 +15,16 @@
  *
  */
 
-#import "TWTRMediaEntityDisplayConfiguration.h"
-#import "TWTRCardEntity.h"
-#import "TWTRImages.h"
-#import "TWTRMediaEntitySize.h"
-#import "TWTRMediaType.h"
-#import "TWTRPlayerCardEntity.h"
-#import "TWTRStringUtil.h"
-#import "TWTRTweetMediaEntity.h"
-#import "TWTRVideoMetaData.h"
-#import "TWTRViewUtil.h"
+#import <TwitterKit/TWTRMediaEntityDisplayConfiguration.h>
+#import <TwitterKit/TWTRCardEntity.h>
+#import <TwitterKit/TWTRImages.h>
+#import <TwitterKit/TWTRMediaEntitySize.h>
+#import <TwitterKit/TWTRMediaType.h>
+#import <TwitterKit/TWTRPlayerCardEntity.h>
+#import <TwitterKit/TWTRStringUtil.h>
+#import <TwitterKit/TWTRTweetMediaEntity.h>
+#import <TwitterKit/TWTRVideoMetaData.h>
+#import <TwitterKit/TWTRViewUtil.h>
 
 static NSString *const TWTRPillGIFText = @"GIF";
 

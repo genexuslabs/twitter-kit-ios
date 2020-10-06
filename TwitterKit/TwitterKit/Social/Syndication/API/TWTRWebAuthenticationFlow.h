@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRWebAuthenticationFlow_h
+#define TWTRWebAuthenticationFlow_h
+
 /**
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
@@ -38,7 +41,7 @@ typedef void (^TWTRAuthRedirectCompletion)(NSURL *url);
 
 /**
  * Presents a simple interface for performing 3 legged OAuth with Twitter. This
- * will choose automatically whether to use UIWebView or SFSafariViewController
+ * will choose automatically whether to use WKWebView or SFSafariViewController
  * based on class availability and the presence of a valid TwitterKit URL scheme.
  */
 @interface TWTRWebAuthenticationFlow : NSObject
@@ -91,3 +94,5 @@ typedef void (^TWTRAuthRedirectCompletion)(NSURL *url);
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif /* TWTRWebAuthenticationFlow_h */

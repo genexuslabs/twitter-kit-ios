@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRTimelineViewController_h
+#define TWTRTimelineViewController_h
+
 #import <UIKit/UIKit.h>
 @protocol TWTRTimelineDataSource;
 @protocol TWTRTweetViewDelegate;
@@ -127,3 +130,5 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif /* TWTRTimelineViewController_h */

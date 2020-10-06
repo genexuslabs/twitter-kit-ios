@@ -12,10 +12,10 @@
 #import <TwitterCore/TWTRAuthenticationConstants.h>
 #import <TwitterCore/TWTRGuestSession.h>
 #import "OCMock.h"
-#import "TWTRNetworkSessionProvider.h"
-#import "TWTRSessionFixtureLoader.h"
-#import "TWTRSessionRefreshStrategy.h"
-#import "TWTRTestCase.h"
+#import <TwitterCore/TWTRNetworkSessionProvider.h>
+#import <TwitterCore/TWTRSessionFixtureLoader.h>
+#import <TwitterCore/TWTRSessionRefreshStrategy.h>
+#import <TwitterCore/TWTRTestCase.h>
 
 @interface TWTRSessionRefreshStategyTests : TWTRTestCase
 

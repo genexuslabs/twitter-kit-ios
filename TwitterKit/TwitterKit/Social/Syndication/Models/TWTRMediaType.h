@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRMediaType_h
+#define TWTRMediaType_h
+
 /**
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
@@ -23,3 +26,5 @@ typedef NS_ENUM(NSUInteger, TWTRMediaType) { TWTRMediaTypeGIF, TWTRMediaTypePhot
 
 TWTRMediaType TWTRMediaTypeFromStringContentType(NSString *contentType);
 NSString *NSStringFromTWTRMediaType(TWTRMediaType entityType);
+
+#endif /* TWTRMediaType_h */

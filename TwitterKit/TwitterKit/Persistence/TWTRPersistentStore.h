@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRPersistentStore_h
+#define TWTRPersistentStore_h
+
 /**
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
@@ -35,3 +38,5 @@
 @property (nonatomic, assign, readonly) uint64_t totalSize;
 
 @end
+
+#endif /* TWTRPersistentStore_h */

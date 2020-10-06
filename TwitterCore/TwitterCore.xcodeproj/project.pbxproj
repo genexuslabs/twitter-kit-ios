@@ -271,7 +271,6 @@
 		DBAFACBE1B717FFC0065B9B2 /* TWTRURLSessionDelegateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DBAFACBD1B717FFC0065B9B2 /* TWTRURLSessionDelegateTests.m */; };
 		DBB4945E1B4596DC00F08FA5 /* TWTRGenericKeychainItem.h in Headers */ = {isa = PBXBuildFile; fileRef = DBB4945C1B4596DC00F08FA5 /* TWTRGenericKeychainItem.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		DBB4945F1B4596DC00F08FA5 /* TWTRGenericKeychainItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DBB4945D1B4596DC00F08FA5 /* TWTRGenericKeychainItem.m */; };
-		DBB494791B45B23100F08FA5 /* TWTRGenericKeychainItemTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DBB494781B45B23100F08FA5 /* TWTRGenericKeychainItemTests.m */; };
 		DBC0F0831B55C161006B6BB6 /* TWTRNetworkingPipeline.h in Headers */ = {isa = PBXBuildFile; fileRef = DBC0F07B1B55C161006B6BB6 /* TWTRNetworkingPipeline.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		DBC0F0841B55C161006B6BB6 /* TWTRNetworkingPipeline.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC0F07C1B55C161006B6BB6 /* TWTRNetworkingPipeline.m */; };
 		DBC0F0851B55C161006B6BB6 /* TWTRNetworkingPipelinePackage.h in Headers */ = {isa = PBXBuildFile; fileRef = DBC0F07D1B55C161006B6BB6 /* TWTRNetworkingPipelinePackage.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -1385,7 +1384,7 @@
 		9D5A92191AAA89730039EFCC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Twitter Inc.";
 				TargetAttributes = {
 					9D5A92201AAA89730039EFCC = {
@@ -1402,13 +1401,14 @@
 			};
 			buildConfigurationList = 9D5A921C1AAA89730039EFCC /* Build configuration list for PBXProject "TwitterCore" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				ja,
 				ko,
 				"zh-Hans",
+				Base,
 			);
 			mainGroup = 9D5A92181AAA89730039EFCC;
 			productRefGroup = 9D5A92221AAA89730039EFCC /* Products */;
@@ -1528,7 +1528,6 @@
 				6C9581DF1AE1EEFA002981F8 /* TWTRUserSessionVerifierTests.m in Sources */,
 				6C9581F21AE1F7C0002981F8 /* TWTRColorUtilTests.m in Sources */,
 				6C9581B21AE1EC4B002981F8 /* TWTRUserAPIClientTests.m in Sources */,
-				DBB494791B45B23100F08FA5 /* TWTRGenericKeychainItemTests.m in Sources */,
 				6C9581C61AE1ED68002981F8 /* TWTRGuestAuthProviderTests.m in Sources */,
 				DBC0F1201B55CD7E006B6BB6 /* TWTRNetworkingPipelineQueueTests.m in Sources */,
 				DBC0F1291B55CECA006B6BB6 /* TWTRSessionFixtureLoader.m in Sources */,
@@ -1598,7 +1597,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
@@ -1606,8 +1607,13 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -1649,7 +1655,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
@@ -1657,8 +1665,13 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -1724,11 +1737,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 24AC144B1BE7B62C000029B5 /* TwitterCoreTests.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = io.twittercore.ios.test;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -1736,11 +1751,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 24AC144B1BE7B62C000029B5 /* TwitterCoreTests.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = io.twittercore.ios.test;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};

@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRSEAutoCompletionViewModel_h
+#define TWTRSEAutoCompletionViewModel_h
+
 @import Foundation;
 
 @protocol TWTRSEWordRangeCalculator;
@@ -35,3 +38,5 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif /* TWTRSEAutoCompletionViewModel_h */

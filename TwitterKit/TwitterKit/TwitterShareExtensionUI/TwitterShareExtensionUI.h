@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TwitterShareExtensionUI_h
+#define TwitterShareExtensionUI_h
+
 @import UIKit;
 
 //! Project version number for TwitterShareExtensionUI.
@@ -41,3 +44,5 @@ FOUNDATION_EXTERN const unsigned char TwitterShareExtensionUIVersionString[];
 #import "TWTRSETweetURLAttachmentMetadata.h"
 #import "TWTRSETwitterUser.h"
 #import "TWTRSEWordRangeCalculator.h"
+
+#endif /* TwitterShareExtensionUI_h */

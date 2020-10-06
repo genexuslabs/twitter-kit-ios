@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTROSVersionInfo_h
+#define TWTROSVersionInfo_h
+
 /**
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
@@ -26,3 +29,5 @@
 + (NSInteger)majorVersion;
 
 @end
+
+#endif /* TWTROSVersionInfo_h */

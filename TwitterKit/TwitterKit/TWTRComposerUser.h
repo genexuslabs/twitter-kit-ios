@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRComposerUser_h
+#define TWTRComposerUser_h
+
 /**
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
@@ -46,3 +49,5 @@ NS_ASSUME_NONNULL_BEGIN
 TWTRComposerUser *userFromUser(TWTRUser *twitterKitUser);
 
 NS_ASSUME_NONNULL_END
+
+#endif /* TWTRComposerUser_h */

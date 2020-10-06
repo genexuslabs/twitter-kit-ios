@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRTimelineDataSource_Constants_h
+#define TWTRTimelineDataSource_Constants_h
+
 /**
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
@@ -24,3 +27,5 @@
 FOUNDATION_EXTERN const NSUInteger TWTRTimelineDataSourceDefaultMaxTweetsPerRequest;
 FOUNDATION_EXTERN const BOOL TWTRTimelineDataSourceDefaultIncludeReplies;
 FOUNDATION_EXTERN const BOOL TWTRTimelineDataSourceDefaultIncludeRetweets;
+
+#endif /* TWTRTimelineDataSource_Constants_h */

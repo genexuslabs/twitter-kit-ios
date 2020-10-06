@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRSELoadingTableViewCell_h
+#define TWTRSELoadingTableViewCell_h
+
 @import UIKit;
 
 #import "TWTRSEBaseTableViewCell.h"
@@ -22,3 +25,5 @@
 @interface TWTRSELoadingTableViewCell : TWTRSEBaseTableViewCell
 
 @end
+
+#endif /* TWTRSELoadingTableViewCell_h */

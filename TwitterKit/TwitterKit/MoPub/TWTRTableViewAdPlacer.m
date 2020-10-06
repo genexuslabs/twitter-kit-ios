@@ -16,7 +16,7 @@
  */
 
 #import "TWTRTableViewAdPlacer.h"
-#import <MoPub/MPTableViewAdPlacer.h>
+@import MoPub;
 #import "TWTRMoPubAdConfiguration.h"
 #import "TWTRMoPubAdConfiguration_Private.h"
 #import "TWTRMoPubVersionChecker.h"

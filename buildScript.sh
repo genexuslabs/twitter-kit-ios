@@ -1,6 +1,6 @@
 # PARAMETERS DEFAULTS
 DEFAULT_BUILD_CONFIG="Release"
-DEFAUILT_BUILD_COMMAND="clean build"
+DEFAUILT_BUILD_COMMAND="build"
 PLATFORM_NAMES=("iOS" "tvOS")
 IOS_NAMES_SDKS=("iphonesimulator" "iphoneos")
 TVOS_NAMES_SDKS=("appletvsimulator" "appletvos")
@@ -9,7 +9,6 @@ BUILDS_FOR_TV=(true false) #Same order as PROJECTS_NAMES above. Indicates if tvO
 
 #FILES and FOLDERS
 ROOT_FOLDER=$(pwd)
-SYMROOT="$ROOT_FOLDER/build"
 POD_DIRECTORY_NAME="Pod"
 README_FILE_NAMES=("cocoapod_readme.md" "README.md") #Same order as PROJECTS_NAMES above.
 
@@ -45,26 +44,10 @@ function copyToOutputDirectory () {
     fi
 }
 
-function copyReadMeFile () {
-    README_FILE_PATH=`echo $README_FILE_TEMPLATE_PATH | sed "s/PROJECT_DIR/$1"`
-    echo "ReadMe file to copy: '$README_FILE_PATH'"
-
-    if [ -f "$README_FILE_PATH" ];
-    then 
-        cp -f $README_FILE_PATH $2
-    else
-        echo "Could not find readMe file."
-    fi
-}
-
 function getPodspecVersion () {
     PODSPEC_FILE=$1
     echo $(grep -hnr -m 1 "s.version" $PODSPEC_FILE | grep -o '".*"' | tr -d '"')
 }
-
-# PREPARE BUILD DIRECTORY
-echo "Preparing build directory..."
-createOrCleanDirectory $SYMROOT
 
 #BUILD TWITTERKIT
 #for PROJECT_NAME in "${PROJECTS_NAMES[@]}"; do
@@ -78,7 +61,7 @@ for ((i = 0; i < ${#PROJECTS_NAMES[@]}; i++)); do
     POD_VERSION=$(getPodspecVersion "$ROOT_FOLDER/$PROJECT_NAME/$PROJECT_NAME.podspec")
 
     for PLATFORM in "${PLATFORM_NAMES[@]}"; do
-        PROJECT_SYMROOT="$SYMROOT/$PROJECT_NAME"
+        PROJECT_SYMROOT="$ROOT_FOLDER/$PROJECT_NAME/build/"
         if [ "$PLATFORM" == "tvOS" ];
         then
             if [ "${BUILDS_FOR_TV[i]}" = true ];
@@ -92,7 +75,6 @@ for ((i = 0; i < ${#PROJECTS_NAMES[@]}; i++)); do
         fi
 
         echo "Building for platform: $PLATFORM"
-        PROJECT_SYMROOT+="/$PLATFORM"
         POD_OUTPUT_DIR="$PROJECT_NAME/$POD_DIRECTORY_NAME/$POD_VERSION/$PROJECT_NAME/$PLATFORM"
         POD_OUTPUT_DIR_FRAMEWORK="$POD_OUTPUT_DIR/$SCHEME_NAME.framework"
         createOrCleanDirectory "$POD_OUTPUT_DIR_FRAMEWORK"
@@ -102,13 +84,13 @@ for ((i = 0; i < ${#PROJECTS_NAMES[@]}; i++)); do
         for SDK in "${PLATFORMS_NAMES_SDKS[@]}"; do
             CONFIG_SYMROOT="$PROJECT_SYMROOT/$CONFIG-$SDK"
             
-            if !(xcodebuild -project $XCODEPROJ_NAME -scheme $SCHEME_NAME -sdk $SDK ONLY_ACTIVE_ARCH=NO -configuration $CONFIG SYMROOT=$CONFIG_SYMROOT $DEFAUILT_BUILD_COMMAND); 
+            if !(xcodebuild -project $XCODEPROJ_NAME -scheme $SCHEME_NAME -sdk $SDK ONLY_ACTIVE_ARCH=NO -configuration $CONFIG $DEFAUILT_BUILD_COMMAND); 
             then
                 echo "Bulding TwitterKit failed in dir: $CONFIG_SYMROOT"
                 exit 1
             fi
 
-            FRAMEWORK_FILE_NAME="$CONFIG_SYMROOT/$CONFIG-$SDK/$SCHEME_NAME.framework/"
+            FRAMEWORK_FILE_NAME="$CONFIG_SYMROOT/$SCHEME_NAME.framework/"
             FRAMEWORK_FILE_INNERFOLDER="$FRAMEWORK_FILE_NAME/$SCHEME_NAME"
             BUILDED_FRAMEWORKS+=($FRAMEWORK_FILE_INNERFOLDER)
         done

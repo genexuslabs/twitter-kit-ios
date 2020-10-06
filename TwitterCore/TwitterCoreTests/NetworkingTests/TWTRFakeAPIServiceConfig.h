@@ -15,7 +15,7 @@
  *
  */
 
-#import "TWTRAPIServiceConfig.h"
+#import <TwitterCore/TWTRAPIServiceConfig.h>
 
 @interface TWTRFakeAPIServiceConfig : NSObject <TWTRAPIServiceConfig>
 

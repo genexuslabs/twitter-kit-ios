@@ -15,7 +15,7 @@
  *
  */
 
-#import <MoPub/MoPub.h>
+@import MoPub;
 #import <OCMock/OCMock.h>
 #import "TWTRMoPubVersionChecker.h"
 #import "TWTRTestCase.h"
@@ -96,7 +96,7 @@
     }];
 }
 
-- (void)testVersionParsingWithMoPubVersion:(NSString *)versionString test:(BOOL (^)())testBlock
+- (void)testVersionParsingWithMoPubVersion:(NSString *)versionString test:(BOOL (^)(void))testBlock
 {
     id mockMopub = OCMClassMock([MoPub class]);
     OCMStub([mockMopub sharedInstance]).andReturn(mockMopub);

@@ -6,55 +6,59 @@
 	<dict>
 		<key>Headers/NSNotificationCenter+OCMAdditions.h</key>
 		<data>
-		pFhPKZzX9HM07wFLAmeFF43SG6Q=
+		+dV/+LFSP/wgYqVhTndAcL7TD24=
 		</data>
 		<key>Headers/OCMArg.h</key>
 		<data>
-		eXH6306vchCAoMs2SOo05ZgYfyE=
+		8kMOu6mPvZqomUJVkfEhk55dyrk=
 		</data>
 		<key>Headers/OCMConstraint.h</key>
 		<data>
-		FRbc5GvcXMiiCFl1PgW3OvepNYA=
+		7r+T1akr6XyPRInJ2wwQz4LxNWU=
 		</data>
 		<key>Headers/OCMFunctions.h</key>
 		<data>
-		CyzP7WkZ+OOYELFA5WsZaWO5kxg=
+		sVA8T8aL72IRJjL+/jEevEoXs3c=
 		</data>
 		<key>Headers/OCMLocation.h</key>
 		<data>
-		qjhhruQ18SiTXjsRjKGUD1eCM/g=
+		+tfLEIKU+i6IjKVgvF/ak1rnHPA=
 		</data>
 		<key>Headers/OCMMacroState.h</key>
 		<data>
-		qJJTF+b6OeQggRm1gDg8v6UIzpM=
+		ldIYpo08htCIYbdkC5/cgGsgzuc=
+		</data>
+		<key>Headers/OCMQuantifier.h</key>
+		<data>
+		k5KiAhQtULHAViAEhsqglY/yeRU=
 		</data>
 		<key>Headers/OCMRecorder.h</key>
 		<data>
-		diyYzxk+iLvIqBa+mGMSxgNx5Hs=
+		AIPBciApN89ALCvOniqKwUqHXqE=
 		</data>
 		<key>Headers/OCMStubRecorder.h</key>
 		<data>
-		jk2b9AjWJ1SRj0ju7Uu+U3C3uT8=
+		cIvq3E4OnjdnmeapAi5wANLjQuE=
 		</data>
-		<key>Headers/OCMock-umbrella.h</key>
+		<key>Headers/OCMVerifier.h</key>
 		<data>
-		OVCNUiQTxLoMy+50PWYqR0+uFqo=
+		By2CLbie4bflfMhmr2JX6X0MPGM=
 		</data>
 		<key>Headers/OCMock.h</key>
 		<data>
-		93kK1Oj0uYy5eT+GMc5l1IOm+E0=
+		VMWStz+1EKMJ2obIGmJInBZ6k7I=
 		</data>
 		<key>Headers/OCMockObject.h</key>
 		<data>
-		oZEWGlkN3u1F+7KPHoLi3MYbU0k=
+		zXSkg7Cz8zr9pBFeJDh7Maeny7M=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		zat5wuVjQ6HIxqbcAT52M8AVMkg=
+		7DVTZWs3/kBaXolnWxFKBr85Xgo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		7ZFl70kpjsCnrnW4zcFhrOXSwQk=
+		C/zv4wGd+b+kg7T2q31cWmGbPX0=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -63,138 +67,149 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			pFhPKZzX9HM07wFLAmeFF43SG6Q=
+			+dV/+LFSP/wgYqVhTndAcL7TD24=
 			</data>
 			<key>hash2</key>
 			<data>
-			NnTKrGNP4Njk3yKcEvglOeMqccpGA9jHyC1RQu2S0bQ=
+			/ImGvHEJTjmLZOj+pE4MIL425zza3McAuUKcBKWxeAU=
 			</data>
 		</dict>
 		<key>Headers/OCMArg.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			eXH6306vchCAoMs2SOo05ZgYfyE=
+			8kMOu6mPvZqomUJVkfEhk55dyrk=
 			</data>
 			<key>hash2</key>
 			<data>
-			FxqsQiA69iuoHCr4qLNLeUjs0O3nrlM1/y8HFUrRbz0=
+			aCaZshkVRHoegnS0eWRGi6UH13vQ3T/dhN1Lse847L0=
 			</data>
 		</dict>
 		<key>Headers/OCMConstraint.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			FRbc5GvcXMiiCFl1PgW3OvepNYA=
+			7r+T1akr6XyPRInJ2wwQz4LxNWU=
 			</data>
 			<key>hash2</key>
 			<data>
-			0qapY/YQKe0npD4guJXAxrg3PnEIeEK3R+PqW7jEc+A=
+			HZwWZL7ZbLlEpOy3YsITyKzclYEW3SusfqjElkcpfZ0=
 			</data>
 		</dict>
 		<key>Headers/OCMFunctions.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			CyzP7WkZ+OOYELFA5WsZaWO5kxg=
+			sVA8T8aL72IRJjL+/jEevEoXs3c=
 			</data>
 			<key>hash2</key>
 			<data>
-			hBleQ1IlJVlSU7ObC/o8aWPiF4aS3tbjdPPSQX0oFaI=
+			TZ0O+hkS9/Sa7A3gQWccPFyC9VIhlY3BkU0aSTWodUI=
 			</data>
 		</dict>
 		<key>Headers/OCMLocation.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			qjhhruQ18SiTXjsRjKGUD1eCM/g=
+			+tfLEIKU+i6IjKVgvF/ak1rnHPA=
 			</data>
 			<key>hash2</key>
 			<data>
-			D0ep+94IDMx4jNTEObjRjXjOa9o5HWtU3kALeNvMrMk=
+			bMjiK1Na5YP3TwffI/ii1GuXtgS6IwoEFAY4V8+UCFw=
 			</data>
 		</dict>
 		<key>Headers/OCMMacroState.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			qJJTF+b6OeQggRm1gDg8v6UIzpM=
+			ldIYpo08htCIYbdkC5/cgGsgzuc=
 			</data>
 			<key>hash2</key>
 			<data>
-			rO0jxkQY4xa4ynAHSysMSsK1THpZIjLVGO6JAfyb0p8=
+			jnw7LZ7XFEMsEqThhcn9u7ZtE23gpaRQucfPdj5EkRs=
+			</data>
+		</dict>
+		<key>Headers/OCMQuantifier.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			k5KiAhQtULHAViAEhsqglY/yeRU=
+			</data>
+			<key>hash2</key>
+			<data>
+			yyoRkfq5MsDrbO78MpYvYEHIaq0pHaWsz79pX9bVDO8=
 			</data>
 		</dict>
 		<key>Headers/OCMRecorder.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			diyYzxk+iLvIqBa+mGMSxgNx5Hs=
+			AIPBciApN89ALCvOniqKwUqHXqE=
 			</data>
 			<key>hash2</key>
 			<data>
-			Dl5hWJ6yAPLAbm0qYTbZ1Q8WT49qyklAUoxBRUazevU=
+			rZptERfoqepJZ8ZAGqrkANZFu0xf+Chf9VHjTHVJtOw=
 			</data>
 		</dict>
 		<key>Headers/OCMStubRecorder.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			jk2b9AjWJ1SRj0ju7Uu+U3C3uT8=
+			cIvq3E4OnjdnmeapAi5wANLjQuE=
 			</data>
 			<key>hash2</key>
 			<data>
-			tZQFBeJpaclUrRhLP7S8Tkw6To79q4BFCgy956ocR8U=
+			M4F1oDiGYiQsYhJXiLZCZvsV4JD99CNg8iqtkC4n54o=
 			</data>
 		</dict>
-		<key>Headers/OCMock-umbrella.h</key>
+		<key>Headers/OCMVerifier.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			OVCNUiQTxLoMy+50PWYqR0+uFqo=
+			By2CLbie4bflfMhmr2JX6X0MPGM=
 			</data>
 			<key>hash2</key>
 			<data>
-			I2rZ8HVkE/xVQdI0E5t934QXT8gy/0uPJeeBfVe4WEw=
+			V2AZJPxuoD+T6DKAiw+2qFYlgnTyhMwWAiUdLHySvps=
 			</data>
 		</dict>
 		<key>Headers/OCMock.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			93kK1Oj0uYy5eT+GMc5l1IOm+E0=
+			VMWStz+1EKMJ2obIGmJInBZ6k7I=
 			</data>
 			<key>hash2</key>
 			<data>
-			4QEeRNlGEjQ8CTfq7Bl5lcdkpjb35WQvT9VvDQott8Q=
+			Bu5Y/guEekEAoagiSvxQEcHY5D9+ITRBmjXuwsJNhEU=
 			</data>
 		</dict>
 		<key>Headers/OCMockObject.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			oZEWGlkN3u1F+7KPHoLi3MYbU0k=
+			zXSkg7Cz8zr9pBFeJDh7Maeny7M=
 			</data>
 			<key>hash2</key>
 			<data>
-			JIb6/mFaQhSB0mM9ofM5Stqa5aJe7pwiDsuBf9FZV00=
+			cRBEddlcD4erELmSC9vvrKuD8Xgjz9+Tn42iouAkPB0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7ZFl70kpjsCnrnW4zcFhrOXSwQk=
+			C/zv4wGd+b+kg7T2q31cWmGbPX0=
 			</data>
 			<key>hash2</key>
 			<data>
-			5tab/mRnBetCvBmyxc/IvF3CQVFoOYefOvWht8T+Xw4=
+			B5k13RUp+z7jVfSrgRPFafuYH6CF8A6V1qosS2Lm+1k=
 			</data>
 		</dict>
 	</dict>
 	<key>rules</key>
 	<dict>
-		<key>^</key>
+		<key>^.*</key>
 		<true/>
 		<key>^.*\.lproj/</key>
 		<dict>
@@ -225,24 +240,12 @@
 			<key>weight</key>
 			<real>11</real>
 		</dict>
-		<key>^</key>
-		<dict>
-			<key>weight</key>
-			<real>20</real>
-		</dict>
 		<key>^(.*/)?\.DS_Store$</key>
 		<dict>
 			<key>omit</key>
 			<true/>
 			<key>weight</key>
 			<real>2000</real>
-		</dict>
-		<key>^(Frameworks|SharedFrameworks|PlugIns|Plug-ins|XPCServices|Helpers|MacOS|Library/(Automator|Spotlight|LoginItems))/</key>
-		<dict>
-			<key>nested</key>
-			<true/>
-			<key>weight</key>
-			<real>10</real>
 		</dict>
 		<key>^.*</key>
 		<true/>
@@ -278,13 +281,6 @@
 			<true/>
 			<key>weight</key>
 			<real>20</real>
-		</dict>
-		<key>^[^/]+$</key>
-		<dict>
-			<key>nested</key>
-			<true/>
-			<key>weight</key>
-			<real>10</real>
 		</dict>
 		<key>^embedded\.provisionprofile$</key>
 		<dict>

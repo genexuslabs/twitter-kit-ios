@@ -16,14 +16,53 @@
  */
 
 #import <UIKit/UIKit.h>
+@import WebKit;
 #import "TWTRTestCase.h"
 #import "TWTRWebViewController.h"
 
+@interface DummyNavigationAction: WKNavigationAction
+- (id)initWithRequest:(NSURLRequest *)request;
+@end
+
+@implementation DummyNavigationAction {
+	NSURLRequest *_request;
+	WKNavigationType _navigationType;
+}
+
+- (id)initWithRequest:(NSURLRequest *)request
+{
+	return [self initWithRequest:request navigationType:0];
+}
+
+- (id)initWithRequest:(NSURLRequest *)request navigationType:(WKNavigationType)navigationType
+{
+	self = [super init];
+	if (self)
+	{
+		_request = request;
+		_navigationType = navigationType;
+	}
+	
+	return self;
+}
+
+- (NSURLRequest *)request
+{
+	return _request;
+}
+
+- (WKNavigationType)navigationType
+{
+	return _navigationType;
+}
+
+@end
+
 @interface TWTRWebViewController ()
 
-@property (nonatomic, readonly) UIWebView *webView;
+@property (nonatomic, readonly) WKWebView *webView;
 
-- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType;
+- (void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler;
 
 @end
 
@@ -38,7 +77,7 @@
 - (void)setUp
 {
     [super setUp];
-    TWTRWebViewControllerShouldLoadCompletion shouldLoadCompletion = ^BOOL(UIViewController *controller, NSURLRequest *urlRequest, UIWebViewNavigationType navType) {
+    TWTRWebViewControllerShouldLoadCompletion shouldLoadCompletion = ^BOOL(UIViewController *controller, NSURLRequest *urlRequest, WKNavigationType navType) {
         return YES;
     };
     self.webVC = [[TWTRWebViewController alloc] init];
@@ -48,48 +87,72 @@
 - (void)testShouldStartLoadWithRequest_returnsYESForWhitelistedDomain
 {
     NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:@"http://twitter.com/test"]];
-    XCTAssert([self.webVC webView:nil shouldStartLoadWithRequest:request navigationType:0]);
+	WKNavigationAction *navigationAction = [[DummyNavigationAction alloc] initWithRequest:request];
+	[self.webVC webView:nil decidePolicyForNavigationAction:navigationAction decisionHandler:^(WKNavigationActionPolicy policy) {
+		XCTAssert(policy == WKNavigationActionPolicyAllow);
+	}];
 }
 
 - (void)testShouldStartLoadWithRequest_returnsYESForWhitelistedSubDomain
 {
     NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:@"http://lol.twitter.com/test"]];
-    XCTAssert([self.webVC webView:nil shouldStartLoadWithRequest:request navigationType:0]);
+	WKNavigationAction *navigationAction = [[DummyNavigationAction alloc] initWithRequest:request];
+	[self.webVC webView:nil decidePolicyForNavigationAction:navigationAction decisionHandler:^(WKNavigationActionPolicy policy) {
+		XCTAssert(policy == WKNavigationActionPolicyAllow);
+	}];
 }
 
 - (void)testShouldStartLoadWithRequest_returnsYESForWhitelistedScheme
 {
     NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:@"twittersdk://callback"]];
-    XCTAssert([self.webVC webView:nil shouldStartLoadWithRequest:request navigationType:0]);
+	WKNavigationAction *navigationAction = [[DummyNavigationAction alloc] initWithRequest:request];
+	[self.webVC webView:nil decidePolicyForNavigationAction:navigationAction decisionHandler:^(WKNavigationActionPolicy policy) {
+		XCTAssert(policy == WKNavigationActionPolicyAllow);
+	}];
 }
 
 - (void)testShouldStartLoadWithRequest_returnsNOForHackySchemeInQuery
 {
     NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:@"http://lolp0wnedtwitter.com/twittersdk://callback"]];
-    XCTAssertFalse([self.webVC webView:nil shouldStartLoadWithRequest:request navigationType:0]);
+	WKNavigationAction *navigationAction = [[DummyNavigationAction alloc] initWithRequest:request];
+	[self.webVC webView:nil decidePolicyForNavigationAction:navigationAction decisionHandler:^(WKNavigationActionPolicy policy) {
+		XCTAssertFalse(policy == WKNavigationActionPolicyAllow);
+	}];
 }
 
 - (void)testShouldStartLoadWithRequest_returnsNOForHackyScheme
 {
     NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:@"abctwittersdk://callback"]];
-    XCTAssertFalse([self.webVC webView:nil shouldStartLoadWithRequest:request navigationType:0]);
+	WKNavigationAction *navigationAction = [[DummyNavigationAction alloc] initWithRequest:request];
+	[self.webVC webView:nil decidePolicyForNavigationAction:navigationAction decisionHandler:^(WKNavigationActionPolicy policy) {
+		XCTAssertFalse(policy == WKNavigationActionPolicyAllow);
+	}];
 }
 
 - (void)testShouldStartLoadWithRequest_returnsNOForHackyCleverLOLDomain
 {
     NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:@"http://lolp0wnedtwitter.com/test"]];
-    XCTAssertFalse([self.webVC webView:nil shouldStartLoadWithRequest:request navigationType:0]);
+	WKNavigationAction *navigationAction = [[DummyNavigationAction alloc] initWithRequest:request];
+	[self.webVC webView:nil decidePolicyForNavigationAction:navigationAction decisionHandler:^(WKNavigationActionPolicy policy) {
+		XCTAssertFalse(policy == WKNavigationActionPolicyAllow);
+	}];
 }
 
 - (void)testShouldStartLoadWithRequest_returnsYESForWhitelistedDomainButHackyQuery
 {
     NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:@"http://twitter.com/test?query=twitter.com"]];
-    XCTAssert([self.webVC webView:nil shouldStartLoadWithRequest:request navigationType:0]);
+	WKNavigationAction *navigationAction = [[DummyNavigationAction alloc] initWithRequest:request];
+	[self.webVC webView:nil decidePolicyForNavigationAction:navigationAction decisionHandler:^(WKNavigationActionPolicy policy) {
+		XCTAssertTrue(policy == WKNavigationActionPolicyAllow);
+	}];
 }
 
 - (void)testShouldStartLoadWithRequest_returnsNOForNonWhitelistedDomain
 {
     NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:@"http://google.com/test"]];
-    XCTAssertFalse([self.webVC webView:nil shouldStartLoadWithRequest:request navigationType:0]);
+	WKNavigationAction *navigationAction = [[DummyNavigationAction alloc] initWithRequest:request];
+	[self.webVC webView:nil decidePolicyForNavigationAction:navigationAction decisionHandler:^(WKNavigationActionPolicy policy) {
+		XCTAssertFalse(policy == WKNavigationActionPolicyAllow);
+	}];
 }
 @end

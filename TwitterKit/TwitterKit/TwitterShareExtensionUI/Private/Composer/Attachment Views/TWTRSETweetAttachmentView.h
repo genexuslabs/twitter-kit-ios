@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRSETweetAttachmentView_h
+#define TWTRSETweetAttachmentView_h
+
 @import UIKit;
 
 @protocol TWTRSETweetAttachment;
@@ -31,3 +34,5 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif /* TWTRSETweetAttachmentView_h */

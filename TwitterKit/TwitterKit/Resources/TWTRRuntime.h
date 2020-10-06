@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRRuntime_h
+#define TWTRRuntime_h
+
 /**
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
@@ -30,3 +33,5 @@
 + (BOOL)isRunningUnitTests;
 
 @end
+
+#endif /* TWTRRuntime_h */

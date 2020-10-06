@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRSEGeoPlaceTableViewCell_h
+#define TWTRSEGeoPlaceTableViewCell_h
+
 #import "TWTRSEBaseTableViewCell.h"
 
 @protocol TWTRSEGeoPlace;
@@ -39,3 +42,5 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif /* TWTRSEGeoPlaceTableViewCell_h */

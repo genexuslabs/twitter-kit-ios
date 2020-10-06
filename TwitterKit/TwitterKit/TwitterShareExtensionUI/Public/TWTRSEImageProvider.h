@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRSEImageProvider_h
+#define TWTRSEImageProvider_h
+
 @import Foundation;
 
 @class UIImage;
@@ -38,3 +41,5 @@ typedef void (^TWTRSEImageFailureBlock)(NSError *);
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif /* TWTRSEImageProvider_h */

@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRTweetCache_h
+#define TWTRTweetCache_h
+
 /**
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
@@ -52,3 +55,5 @@
 - (BOOL)removeTweetWithID:(NSString *)tweetIDString perspective:(NSString *)userIDString;
 
 @end
+
+#endif /* TWTRTweetCache_h */

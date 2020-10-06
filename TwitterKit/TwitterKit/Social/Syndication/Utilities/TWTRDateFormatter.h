@@ -15,6 +15,9 @@
  *
  */
 
+#ifndef TWTRDateFormatter_h
+#define TWTRDateFormatter_h
+
 /**
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
@@ -38,3 +41,5 @@
 + (NSString *)elapsedTimeStringSinceDate:(NSDate *)date;
 
 @end
+
+#endif /* TWTRDateFormatter_h */
