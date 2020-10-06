@@ -1,6 +1,6 @@
 # PARAMETERS DEFAULTS
 DEFAULT_BUILD_CONFIG="Release"
-DEFAUILT_BUILD_COMMAND="build"
+DEFAUILT_BUILD_COMMAND="build archive"
 PLATFORM_NAMES=("iOS" "tvOS")
 IOS_NAMES_SDKS=("iphonesimulator" "iphoneos")
 TVOS_NAMES_SDKS=("appletvsimulator" "appletvos")
@@ -53,13 +53,14 @@ function getPodspecVersion () {
 #for PROJECT_NAME in "${PROJECTS_NAMES[@]}"; do
 for ((i = 0; i < ${#PROJECTS_NAMES[@]}; i++)); do
     PROJECT_NAME=${PROJECTS_NAMES[i]}
-    echo "Building $PROJECT_NAME"
+    echo "\033[1mBuilding $PROJECT_NAME\033[0m"
 
     XCODEPROJ_NAME="$ROOT_FOLDER/$PROJECT_NAME/$PROJECT_NAME.xcodeproj"
     SCHEME_NAME=$PROJECT_NAME
     CONFIG=$DEFAULT_BUILD_CONFIG
-    POD_VERSION=$(getPodspecVersion "$ROOT_FOLDER/$PROJECT_NAME/$PROJECT_NAME.podspec")
+    POD_VERSION=$(getPodspecVersion "$ROOT_FOLDER/$PROJECT_NAME/GX$PROJECT_NAME.podspec")
 
+    BUILT_FRAMEWORKS=()
     for PLATFORM in "${PLATFORM_NAMES[@]}"; do
         PROJECT_SYMROOT="$ROOT_FOLDER/$PROJECT_NAME/build/"
         if [ "$PLATFORM" == "tvOS" ];
@@ -75,42 +76,38 @@ for ((i = 0; i < ${#PROJECTS_NAMES[@]}; i++)); do
         fi
 
         echo "Building for platform: $PLATFORM"
-        POD_OUTPUT_DIR="$PROJECT_NAME/$POD_DIRECTORY_NAME/$POD_VERSION/$PROJECT_NAME/$PLATFORM"
-        POD_OUTPUT_DIR_FRAMEWORK="$POD_OUTPUT_DIR/$SCHEME_NAME.framework"
-        createOrCleanDirectory "$POD_OUTPUT_DIR_FRAMEWORK"
 
         #BUILD FRAMEWORKS
-        BUILDED_FRAMEWORKS=()
         for SDK in "${PLATFORMS_NAMES_SDKS[@]}"; do
             CONFIG_SYMROOT="$PROJECT_SYMROOT/$CONFIG-$SDK"
+            ARCHIVE_PATH="$PROJECT_SYMROOT/$PLATFORM_$SDK.xcarchive"
             
-            if !(xcodebuild -project $XCODEPROJ_NAME -scheme $SCHEME_NAME -sdk $SDK ONLY_ACTIVE_ARCH=NO -configuration $CONFIG $DEFAUILT_BUILD_COMMAND); 
+            if !(xcodebuild -project $XCODEPROJ_NAME -scheme $SCHEME_NAME -sdk $SDK -configuration $CONFIG BUILD_LIBRARY_FOR_DISTRIBUTION=YES SKIP_INSTALL=NO -quiet -archivePath $ARCHIVE_PATH $DEFAUILT_BUILD_COMMAND); 
             then
-                echo "Bulding TwitterKit failed in dir: $CONFIG_SYMROOT"
+                echo "Bulding failed at dir: $CONFIG_SYMROOT"
                 exit 1
             fi
 
-            FRAMEWORK_FILE_NAME="$CONFIG_SYMROOT/$SCHEME_NAME.framework/"
-            FRAMEWORK_FILE_INNERFOLDER="$FRAMEWORK_FILE_NAME/$SCHEME_NAME"
-            BUILDED_FRAMEWORKS+=($FRAMEWORK_FILE_INNERFOLDER)
+            BUILT_FRAMEWORKS+=("$ARCHIVE_PATH/Products/Library/Frameworks/$SCHEME_NAME.framework")
         done
-
-        #CREATE UNIVERSAL FRAMEWORK FOLDER
-        UNIVERSAL_FRAMEWORK_FOLDER="$PROJECT_SYMROOT/Universal/$SCHEME_NAME.framework"
-        createOrCleanDirectory $UNIVERSAL_FRAMEWORK_FOLDER
-
-        #COPY CONTENTS TO UNIVERSAL FRAMEWORK
-        cp -R "$FRAMEWORK_FILE_NAME"/* $UNIVERSAL_FRAMEWORK_FOLDER
-
-        if !(lipo -create ${BUILDED_FRAMEWORKS[@]} -output "$UNIVERSAL_FRAMEWORK_FOLDER/$SCHEME_NAME");
-        then
-            echo "Creating universal framework failed for project: "
-            exit 1
-        fi
-        copyToOutputDirectory $POD_OUTPUT_DIR_FRAMEWORK $UNIVERSAL_FRAMEWORK_FOLDER
     done
-    
-    POD_OUTPUT_DIR="$PROJECT_NAME/$POD_DIRECTORY_NAME/$POD_VERSION/$PROJECT_NAME"
+
+    POD_OUTPUT_DIR="$PROJECT_NAME/$POD_DIRECTORY_NAME/$POD_VERSION"
+
+    #CREATE XCFRAMEWORK
+    echo "\033[1mCreating XCFramework\033[0m"
+
+    XCFRAMEWORK_OUTPUT="$POD_OUTPUT_DIR/$PROJECT_NAME.xcframework"
+    FRAMEWORKS=""
+    for BUILT_FRAMEWORK in "${BUILT_FRAMEWORKS[@]}"
+    do
+        FRAMEWORKS+="-framework $BUILT_FRAMEWORK "
+    done
+
+    if !(xcodebuild -create-xcframework $FRAMEWORKS -output $XCFRAMEWORK_OUTPUT);
+    then
+        echo "Error building XCFramework for project $PROJECT_NAME"
+    fi
 
     #COPY README FILE
     README_FILE="$ROOT_FOLDER/$PROJECT_NAME/${README_FILE_NAMES[i]}"
