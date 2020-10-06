@@ -36,7 +36,6 @@
 		2B4EB31A24F9F5C8003D6CEE /* libTwitterKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A97654E518E0B29B00E25169 /* libTwitterKit.a */; };
 		2B500A8024FBF18500EEE584 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B500A7D24FBF18500EEE584 /* WebKit.framework */; };
 		2B500A8124FC1F6000EEE584 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4EB31824F9F499003D6CEE /* CoreServices.framework */; };
-		2B500A8324FC20AE00EEE584 /* TWTRTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B500A8224FC20AE00EEE584 /* TWTRTestCase.h */; };
 		2B500A8524FC59FA00EEE584 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B500A7D24FBF18500EEE584 /* WebKit.framework */; };
 		321EF9AB1950D1DC002FEC63 /* TWTRNSCodingUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 321EF9A91950D1DC002FEC63 /* TWTRNSCodingUtil.h */; };
 		321EF9AC1950D1DC002FEC63 /* TWTRNSCodingUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 321EF9AA1950D1DC002FEC63 /* TWTRNSCodingUtil.m */; };
@@ -746,7 +745,7 @@
 		185CE0D41A0142C5006C5EA4 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1889E17B1A00273D00827E5A /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		18D1E1AB194B477A00BAFD5F /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
-		18FE0753191AAC3500485617 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = ../../../../../Applications/Xcode12.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = "<group>"; };
+		18FE0753191AAC3500485617 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2002E6021E5F5BDA007AF951 /* TWTRTweetDelegationHelperTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTRTweetDelegationHelperTest.m; sourceTree = "<group>"; };
 		20563D0C1ED4F6FF0094DAB3 /* TWTRStubMobileSSO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWTRStubMobileSSO.h; path = TwitterKitTests/NetworkingTests/TWTRStubMobileSSO.h; sourceTree = SOURCE_ROOT; };
 		20563D0D1ED4F6FF0094DAB3 /* TWTRStubMobileSSO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWTRStubMobileSSO.m; path = TwitterKitTests/NetworkingTests/TWTRStubMobileSSO.m; sourceTree = SOURCE_ROOT; };
@@ -768,7 +767,6 @@
 		2908077F1D4ABB9800CFBB6E /* TWTRTimelineViewControllerDelegateTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTRTimelineViewControllerDelegateTests.m; sourceTree = "<group>"; };
 		2B4EB31824F9F499003D6CEE /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 		2B500A7D24FBF18500EEE584 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/iOSSupport/System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
-		2B500A8224FC20AE00EEE584 /* TWTRTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWTRTestCase.h; path = "../../../../GeneXus/GitHub/twitter-kit-ios/shared/TwitterTestFoundation/Base/TWTRTestCase.h"; sourceTree = "<group>"; };
 		321EF9A91950D1DC002FEC63 /* TWTRNSCodingUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTRNSCodingUtil.h; sourceTree = "<group>"; };
 		321EF9AA1950D1DC002FEC63 /* TWTRNSCodingUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = TWTRNSCodingUtil.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		3255B3B61937E2D3005EE3CE /* TWTRTweetEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTRTweetEntity.h; sourceTree = "<group>"; };
@@ -1119,7 +1117,7 @@
 		A966541418EB687000B61CEE /* TwitterKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwitterKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A97654E518E0B29B00E25169 /* libTwitterKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTwitterKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A97654E818E0B29B00E25169 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		A97654F618E0B29B00E25169 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = ../../../../../Applications/Xcode12.app/Contents/Developer/Library/Frameworks/XCTest.framework; sourceTree = "<group>"; };
+		A97654F618E0B29B00E25169 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = System/Library/Frameworks/XCTest.framework; sourceTree = SDKROOT; };
 		A976552E18E0B45400E25169 /* TWTRWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTRWebViewController.h; sourceTree = "<group>"; };
 		A976552F18E0B45400E25169 /* TWTRWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTRWebViewController.m; sourceTree = "<group>"; };
 		A9A7FF0C18E4AAA8008334E6 /* TWTRTwitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = TWTRTwitter.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
@@ -2477,7 +2475,6 @@
 		DB2931B11B7D17C600C1ECD8 /* TwitterKitTests */ = {
 			isa = PBXGroup;
 			children = (
-				2B500A8224FC20AE00EEE584 /* TWTRTestCase.h */,
 				370DD6E21E80514100322854 /* TwitterKit Tests-Bridging-Header.h */,
 				377AF9301E7A00EB004099F9 /* TWTRComposerAccountTests.m */,
 				37958CC81E842CBC00E86ED2 /* TWTRComposerNetworkingTests.m */,
