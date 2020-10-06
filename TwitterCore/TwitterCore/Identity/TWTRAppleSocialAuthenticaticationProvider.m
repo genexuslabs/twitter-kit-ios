@@ -207,9 +207,7 @@ NSString *const TWTRSocialAppProviderActionSheetCompletionKey = @"TWTRAppleSocia
     TWTRParameterAssertOrReturn(completion);
 
     dispatch_async(dispatch_get_main_queue(), ^{
-        UIAlertController *alertController = [self alertController];
-        objc_setAssociatedObject(alertController, (__bridge const void *)(TWTRSocialAppProviderActionSheetCompletionKey), completion, OBJC_ASSOCIATION_COPY_NONATOMIC);
-
+        UIAlertController *alertController = [self alertControllerWithCompletion:completion];
 		UIViewController *presentingVC = TWTRUtils.topViewController;
 		
 		if (UIDevice.currentDevice.userInterfaceIdiom == UIUserInterfaceIdiomPad) {
@@ -223,23 +221,18 @@ NSString *const TWTRSocialAppProviderActionSheetCompletionKey = @"TWTRAppleSocia
     });
 }
 
-- (UIAlertController *)alertController
+- (UIAlertController *)alertControllerWithCompletion:(TWTRAuthenticationProviderCompletion)completion
 {
 	UIAlertController *alertController = [UIAlertController alertControllerWithTitle:nil message:nil preferredStyle:UIAlertControllerStyleActionSheet];
-	__weak UIAlertController *wAlertController = alertController;
 	for (ACAccount *account in self.accounts) {
 		NSString *title = [NSString stringWithFormat:@"@%@", account.username];
 		UIAlertAction *action = [UIAlertAction actionWithTitle:title style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull _action) {
-			UIAlertController *sAlertController = wAlertController;
-			TWTRAuthenticationProviderCompletion completion = objc_getAssociatedObject(sAlertController, (__bridge const void *)(TWTRSocialAppProviderActionSheetCompletionKey));
 			[self getAuthTokenWithAccount:account completion:completion];
 			
 		}];
 		[alertController addAction:action];
 	}
 	UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"Cancel", nil) style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
-		UIAlertController *sAlertController = wAlertController;
-		TWTRAuthenticationProviderCompletion completion = objc_getAssociatedObject(sAlertController, (__bridge const void *)(TWTRSocialAppProviderActionSheetCompletionKey));
 		completion(nil, [NSError errorWithDomain:TWTRLogInErrorDomain code:TWTRLogInErrorCodeCancelled userInfo:@{ NSLocalizedDescriptionKey: @"User cancelled authentication." }]);
 	}];
 	[alertController addAction:cancelAction];
