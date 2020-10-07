@@ -2,5 +2,7 @@
 	"3.0.2": "https://ton.twimg.com/syndication/twittercore/ios/3.0.2/Dynamic/TwitterCore.framework.zip",
 	"3.1.0": "https://ton.twimg.com/syndication/twittercore/ios/3.1.0/Dynamic/TwitterCore.framework.zip",
 	"3.2.0": "https://ton.twimg.com/syndication/twittercore/ios/3.2.0/Dynamic/TwitterCore.framework.zip",
-	"3.2.1": "https://github.com/genexuslabs/twitter-kit-ios/releases/download/v3.2.1-TC/TwitterCore.zip"
+	"3.2.1": "https://github.com/genexuslabs/twitter-kit-ios/releases/download/v3.2.1-TC/TwitterCore.zip",
+	"3.2.2": "https://github.com/genexuslabs/twitter-kit-ios/releases/download/v3.2.2-TC/TwitterCore.zip",
+	"3.3.0": "https://github.com/genexuslabs/twitter-kit-ios/releases/download/v3.3.0-TC/TwitterCore.zip"	
 }
