@@ -6,5 +6,7 @@
 	"3.4.2": "https://ton.twimg.com/syndication/twitterkit/ios/3.4.2/Dynamic/TwitterKit.framework.zip",
 	"3.4.3": "https://github.com/genexuslabs/twitter-kit-ios/releases/download/v3.4.3-TK/TwitterKit.zip",
 	"3.4.4": "https://github.com/genexuslabs/twitter-kit-ios/releases/download/v3.4.4-TK/TwitterKit.zip",
-	"3.4.5": "https://github.com/genexuslabs/twitter-kit-ios/releases/download/v3.4.5-TK/TwitterKit.zip"
+	"3.4.5": "https://github.com/genexuslabs/twitter-kit-ios/releases/download/v3.4.5-TK/TwitterKit.zip",
+	"3.4.6": "https://github.com/genexuslabs/twitter-kit-ios/releases/download/v3.4.6-TK/TwitterKit.zip",
+	"3.5.0": "https://github.com/genexuslabs/twitter-kit-ios/releases/download/v3.5.0-TK/TwitterKit.zip"
 }
