@@ -40,7 +40,7 @@
     NSParameterAssert(delegate);
 
     TSELocalized = localizedResources;
-    [TWTRSETweet setTwitterText:twitterText];
+    [TWTRSETweet setTwitterText:(id<TwitterTextProtocol>)twitterText];
 
     if ((self = [super init])) {
         _initialTweet = [initialTweet copy];

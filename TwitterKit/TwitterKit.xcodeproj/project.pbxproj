@@ -2600,7 +2600,6 @@
 				3777840C1E96B8D200BC4830 /* TWTRTestCase.h in Headers */,
 				37B008261C0CF468009D27D5 /* TWTRImageTestHelper.h in Headers */,
 				20563D0F1ED4F6FF0094DAB3 /* TWTRStubMobileSSO.h in Headers */,
-				2B500A8324FC20AE00EEE584 /* TWTRTestCase.h in Headers */,
 				3DF7B23F1B74330300E9A7E1 /* TWTRTestTweetViewDelegate.h in Headers */,
 				3777841E1E96B8D200BC4830 /* TWTRStubTimelineDataSource.h in Headers */,
 				37D649AD1CC57B2F009D47EF /* TWTRSampleSubscriber.h in Headers */,
@@ -3463,8 +3462,8 @@
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/../TwitterCore/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Headers/",
-					"$(PROJECT_DIR)/../TwitterCore/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/PrivateHeaders/",
+					"$(BUILT_PRODUCTS_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Headers/",
+					"$(BUILT_PRODUCTS_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/PrivateHeaders/",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.twitter.sdk.ios.${PRODUCT_NAME:rfc1034identifier}";
 				SDKROOT = iphoneos;
@@ -3487,8 +3486,8 @@
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/../TwitterCore/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Headers/",
-					"$(PROJECT_DIR)/../TwitterCore/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/PrivateHeaders/",
+					"$(BUILT_PRODUCTS_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Headers/",
+					"$(BUILT_PRODUCTS_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/PrivateHeaders/",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.twitter.sdk.ios.${PRODUCT_NAME:rfc1034identifier}";
 				SDKROOT = iphoneos;
@@ -3578,8 +3577,9 @@
 					"$(PROJECT_DIR)",
 				);
 				HEADER_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/../TwitterCore/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Headers/",
-					"$(PROJECT_DIR)/../TwitterCore/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/PrivateHeaders/",
+					"$(inherited)",
+					"$(BUILT_PRODUCTS_DIR)/Headers/",
+					"$(BUILT_PRODUCTS_DIR)/PrivateHeaders/",
 				);
 				SDKROOT = iphoneos;
 			};
@@ -3595,8 +3595,9 @@
 					"$(PROJECT_DIR)",
 				);
 				HEADER_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/../TwitterCore/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Headers/",
-					"$(PROJECT_DIR)/../TwitterCore/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/PrivateHeaders/",
+					"$(inherited)",
+					"$(BUILT_PRODUCTS_DIR)/Headers/",
+					"$(BUILT_PRODUCTS_DIR)/PrivateHeaders/",
 				);
 				SDKROOT = iphoneos;
 			};
@@ -3611,8 +3612,9 @@
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../vendor";
 				HEADER_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/../TwitterCore/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Headers/",
-					"$(PROJECT_DIR)/../TwitterCore/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/PrivateHeaders/",
+					"$(inherited)",
+					"$(BUILT_PRODUCTS_DIR)/Headers/",
+					"$(BUILT_PRODUCTS_DIR)/PrivateHeaders/",
 				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -3633,8 +3635,9 @@
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../vendor";
 				HEADER_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/../TwitterCore/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Headers/",
-					"$(PROJECT_DIR)/../TwitterCore/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/PrivateHeaders/",
+					"$(inherited)",
+					"$(BUILT_PRODUCTS_DIR)/Headers/",
+					"$(BUILT_PRODUCTS_DIR)/PrivateHeaders/",
 				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",

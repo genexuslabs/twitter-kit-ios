@@ -19,7 +19,7 @@
 
 #pragma mark - Twitter kit constants
 
-NSString *const TWTRVersion = @"3.5.0";
+NSString *const TWTRVersion = @"3.5.2";
 NSString *const TWTRResourceBundleLocation = @"TwitterKitResources.bundle";
 NSString *const TWTRBundleID = @"com.twitter.sdk.ios";
 
