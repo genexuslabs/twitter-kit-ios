@@ -4,8 +4,6 @@
 //  Copyright © 2015 Twitter. All rights reserved.
 //
 
-ARCHS = i386 x86_64 armv7 armv7s armv7k arm64
-
 ONLY_ACTIVE_ARCH_Debug = YES
 ONLY_ACTIVE_ARCH_Release = NO
 ONLY_ACTIVE_ARCH = $(ONLY_ACTIVE_ARCH_$(CONFIGURATION))

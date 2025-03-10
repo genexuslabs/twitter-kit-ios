@@ -13,12 +13,11 @@
 // limitations under the License.
 
 #include "Architectures.xcconfig"
-#include "Bitcode.xcconfig"
 #include "SDKSuffix.xcconfig"
 
 PRODUCT_NAME = TwitterCore
 
-CURRENT_PROJECT_VERSION = 3.3.1
+CURRENT_PROJECT_VERSION = 3.3.2
 DYLIB_COMPATIBILITY_VERSION = 1
 DYLIB_CURRENT_VERSION = $(CURRENT_PROJECT_VERSION)
 

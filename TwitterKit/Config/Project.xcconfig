@@ -12,7 +12,6 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-#include "Bitcode.xcconfig"
 #include "CompilerFeatures.xcconfig"
 #include "SDKSuffix.xcconfig"
 
@@ -37,7 +36,7 @@ GCC_WARN_ABOUT_MISSING_NEWLINE = YES
 APPLICATION_EXTENSION_API_ONLY = NO
 
 // Versioning
-CURRENT_PROJECT_VERSION = 3.5.2
+CURRENT_PROJECT_VERSION = 3.5.3
 DYLIB_CURRENT_VERSION = $(CURRENT_PROJECT_VERSION)
 
 // Can *probably* remove this
